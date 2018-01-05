@@ -19,7 +19,8 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/xsmall_birthday-package.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/thumb_birthday-package.jpg",
     "path": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/birthday-package.jpg",
-    "alt": "Birthday Package"
+    "alt": "Birthday Package",
+    "caption": ""
   },
   "large_image": {
     "url": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/birthday-package.jpg",
@@ -45,5 +46,5 @@
   "short_description": "Celebrate your special day in style with a birthday cake and toast of sparkling wine",
   "seo_description": "Celebrate your special day in style with a birthday cake and toast of sparkling wine",
   "order": "01",
-  "long_description": "<p>Celebrate your special day in style with a birthday cake and toast of sparkling wine for two, upon arrival! Of course, complimentary Wine Country breakfast is included every morning, as well as wine tastings on the weekends. Room rate not included.</p>"
+  "long_description": "<p>Celebrate your special day in style with a birthday cake and toast of sparkling wine for two, upon arrival! Of course, complimentary Wine Country breakfast is included every morning. Room rate not included.</p>"
 }
