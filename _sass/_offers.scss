@@ -36,6 +36,14 @@
 					opacity:9;
 				}
 			}
+			.btns-group{
+				a{
+				
+				&:hover{
+					color:$black;
+				}
+			}	
+			}
 			p{
 				 color:$white;					 
 				 margin-bottom: 2rem;
