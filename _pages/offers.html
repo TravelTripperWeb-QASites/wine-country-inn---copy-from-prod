@@ -29,7 +29,7 @@ parent: offers
 
 
 <section class="offers-list-container">
- {% assign offers-List = site.data._models.offers | sort: 'order' | reverse %}
+ {% assign offers-List = site.data._models.offers | sort: 'date_added' %}
     {% for offers in offers-List %}
 
 		<div class="offer-item">									        
