@@ -29,14 +29,12 @@ parent: offers
 
 
 <section class="offers-list-container">
- {% assign offers-List = site.data._models.offers | sort: 'date_added' %}
+ {% assign offers-List = site.data._models.offers | sort: 'order' %}
     {% for offers in offers-List %}
 
 		<div class="offer-item">									        
     		<div class="offer-item-col offerbg no-padding {% cycle '', 'push-lg-5' %}">
-    			<div class="offer-item-text">
-    			
-    			
+    			<div class="offer-item-text">  
                 <h4>{{offers.title }}</h4>
     			<p>{{offers.long_description}}</p>
     			<div class="btns-group">
