@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: "Wine Vacation Packages | Offers at Wine Country Inn"
@@ -29,7 +30,7 @@ parent: offers
 
 
 <section class="offers-list-container">
- {% assign offers-List = site.data._models.offers | sort: 'order' %}
+ {% assign offers-List = site.data._models.offers | sort: 'order' | reverse %}
     {% for offers in offers-List %}
 
 		<div class="offer-item">									        
