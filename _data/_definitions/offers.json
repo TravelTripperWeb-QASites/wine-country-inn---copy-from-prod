@@ -14,7 +14,7 @@
 "url_friendly_name":
 	{"type":"url_slug"},
 "short_description":
-	{"required":true},
+	{"required":true,"type":"richtext"},
 "check_rate_url":
 	{"required":true},
 "long_description":
