@@ -19,7 +19,8 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/xsmall_birthday-package.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/thumb_birthday-package.jpg",
     "path": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/birthday-package.jpg",
-    "alt": "Birthday Package"
+    "alt": "Birthday Package",
+    "caption": ""
   },
   "large_image": {
     "url": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/birthday-package.jpg",
@@ -41,9 +42,10 @@
     "alt": "Birthday Package",
     "caption": ""
   },
-  "check_rate_url": "https://res.windsurfercrs.com/ibe/index.aspx?hotelID=14513",
-  "short_description": "Celebrate your special day in style with a birthday cake and toast of sparkling wine",
-  "seo_description": "Celebrate your special day in style with a birthday cake and toast of sparkling wine",
-  "order": "01",
-  "long_description": "<p>Celebrate your special day in style with a birthday cake and toast of sparkling wine for two, upon arrival! Of course, complimentary Wine Country breakfast is included every morning, as well as wine tastings on the weekends. Room rate not included.</p>"
+  
+  "check_rate_url": "https://res.windsurfercrs.com/ibe/index.aspx?hotelID=14513",  
+  "seo_description": "Celebrate your special day in style with a birthday cake and toast of sparkling wine for two",
+  "order": "3",
+  "short_description": "<p>Celebrate your special day in style with a birthday cake and toast of sparkling wine for two, upon arrival! Of course, complimentary Wine Country breakfast is included every morning, and Friday and Saturday evenings our guests enjoy a complimentary wine and cheese tasting served in the Winery House, hosted by a local vintner.</p>\n<p><strong>Package Includes:</strong></p>\n<ul>\n<li>Chilled split of sparkling wine in your room upon arrival&nbsp;</li>\n<li>Birthday cake for two in your room upon arrival</li>\n<li>Wine Country Breakfast each morning</li>\n<li>Weekend Wine Tasting served in the Winery House hosted by a local vintner</li>\n</ul>",
+  "long_description": "<p>Celebrate your special day in style with a birthday cake and toast of sparkling wine for two, upon arrival! Of course, complimentary Wine Country breakfast is included every morning, and Friday and Saturday evenings our guests enjoy a complimentary wine and cheese tasting served in the Winery House, hosted by a local vintner.</p>\n<p><strong>Package Includes:</strong></p>\n<ul>\n<li>Chilled split of sparkling wine in your room upon arrival&nbsp;</li>\n<li>Birthday cake for two in your room upon arrival</li>\n<li>Wine Country Breakfast each morning</li>\n<li>Weekend Wine Tasting served in the Winery House hosted by a local vintner</li>\n</ul>"
 }

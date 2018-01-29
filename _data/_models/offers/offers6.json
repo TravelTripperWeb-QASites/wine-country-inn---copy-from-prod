@@ -2,7 +2,7 @@
   "title": "Advance Purchase Package",
   "seo_title": "Advance Purchase Package | Wine Country Inn",
   "seo_description": "Book your reservation in advance and receive up to 15% Off.",
-  "order": "03",
+  "order": "5",
   "thumb_image": {
     "url": "//cdn.traveltripper.io/site-assets/32_758_6305/media/2017-09-28-074843/advance-purchase-package.jpg",
     "path": "//cdn.traveltripper.io/site-assets/32_758_6305/media/2017-09-28-074843/advance-purchase-package.jpg",
@@ -41,8 +41,9 @@
     "caption": "",
     "description": ""
   },
-  "short_description": "Book your reservation in advance and receive up to 15% Off.",
+  
   "url_friendly_name": "advance-purchase-package",
   "check_rate_url": "https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513",
+  "short_description": "<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included to add to any Napa Valley Experience. Of course, a Wine Country breakfast is included every morning, split of wine in your room upon arrival, and complimentary tasting passes for two at Markham Vineyards and Freekmark Abbey!</p>\n<p>Note: This is an advance purchase, pre-paid rate. No refunds if canceled or changed. Your credit card will be charged in full for the total amount of your stay. Please note that other terms and conditions may apply, while this package is not always available.</p>",
   "long_description": "<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included to add to any Napa Valley Experience. Of course, a Wine Country breakfast is included every morning, split of wine in your room upon arrival, and complimentary tasting passes for two at Markham Vineyards and Freekmark Abbey!</p>\n<p>Note: This is an advance purchase, pre-paid rate. No refunds if canceled or changed. Your credit card will be charged in full for the total amount of your stay. Please note that other terms and conditions may apply, while this package is not always available.</p>"
 }

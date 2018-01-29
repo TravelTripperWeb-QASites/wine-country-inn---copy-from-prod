@@ -1,9 +1,9 @@
 {
   "title": "Anniversary",
   "seo_title": "Anniversary | Wine Country Inn",
-  "seo_description": "Rekindle that special marriage moment with a stay at the Wine Country Inn & Cottages.",
-  "short_description": "Rekindle that special marriage moment with a stay at the Wine Country Inn & Cottages.",
-  "order": "04",
+  "seo_description": "Rekindle that special marriage moment with a stay at the Wine Country Inn.",
+  
+  "order": "6",
   "thumb_image": {
     "url": "//cdn.traveltripper.io/site-assets/32_758_6305/media/2017-09-28-075715/anniversary.jpg",
     "path": "//cdn.traveltripper.io/site-assets/32_758_6305/media/2017-09-28-075715/anniversary.jpg",
@@ -43,6 +43,8 @@
     "description": ""
   },
   "url_friendly_name": "anniversary",
-  "long_description": "<p>Rekindle that special marriage moment with a stay at the Wine Country Inn &amp; Cottages. Enjoy the moment with a chilled split of sparkling wine in any selected room plus local chocolates. Special complimentary winery tasting opportunities are included to add to any Napa Valley Experience. Of course, complimentary Wine Country breakfast is included every morning, as well as wine tastings on the weekends.</p>",
+  "short_description": "<p>Rekindle that special marriage moment with a stay at the Wine Country Inn. Enjoy the moment with a chilled split of sparkling wine in any selected room plus local chocolates. Of course, complimentary Wine Country breakfast is included every morning, and on Friday and Saturday evenings our guests enjoy a complimentary wine and cheese tasting served in the Winery House, hosted by a local vintner.</p>\n<p><strong>Package Includes:</strong></p>\n<ul>\n<li>Chilled split of sparkling wine in your room upon arrival</li>\n<li>Small box of chocolates from a local chocolatier Woodhouse Chocolates</li>\n<li>Wine Country Breakfast each morning</li>\n<li>Weekend Wine Tasting served in the Winery House hosted by a local vintner</li>\n</ul>",
+  "check_rate_url": "https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513",
+  "long_description": "<p>Rekindle that special marriage moment with a stay at the Wine Country Inn. Enjoy the moment with a chilled split of sparkling wine in any selected room plus local chocolates. Of course, complimentary Wine Country breakfast is included every morning, and on Friday and Saturday evenings our guests enjoy a complimentary wine and cheese tasting served in the Winery House, hosted by a local vintner.</p>\n<p><strong>Package Includes:</strong></p>\n<ul>\n<li>Chilled split of sparkling wine in your room upon arrival</li>\n<li>Small box of chocolates from a local chocolatier Woodhouse Chocolates</li>\n<li>Wine Country Breakfast each morning</li>\n<li>Weekend Wine Tasting served in the Winery House hosted by a local vintner</li>\n</ul>",
   "check_rate_url": "https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513"
 }
