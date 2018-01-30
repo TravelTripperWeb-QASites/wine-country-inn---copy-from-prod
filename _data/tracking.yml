@@ -1,6 +1,6 @@
 ---
 analytics:
-  provider: false
+  provider: true
   google:
     tracking_id: 
   gtm:
