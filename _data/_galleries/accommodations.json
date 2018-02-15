@@ -19,6 +19,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044753/thumb_bedroom-with-window.jpg",
       "git_file_name": "_assets/image_data/bedroom-with-window.json",
       "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044753/bedroom-with-window.jpg"
+    },
+    {
+      "name": "living-room",
+      "file_name": "living-room.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044750/living-room.jpg",
+      "tags": "accommodations",
+      "file_size": 228354,
+      "width": 1000,
+      "height": 667,
+      "description": "",
+      "date_added": "2018-02-15-044750",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044750/large_living-room.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044750/medium_living-room.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044750/small_living-room.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044750/xsmall_living-room.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044750/thumb_living-room.jpg",
+      "git_file_name": "_assets/image_data/living-room.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044750/living-room.jpg"
     }
   ],
   "description": ""
