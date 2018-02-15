@@ -5,79 +5,81 @@ seo_description: "Wine Country Inn is a beautiful Napa Valley hotel with vineyar
 permalink: /accommodations/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/accommodations/accommodations-banner.jpg);">
- 	<h1>accommodations</h1>
+    <h1>{% regionblock accommodations_header_1, type:header %}Accommodations{% endregionblock %}</h1>
 </section>
-
 <section class="accommodations-container no-padding">
-		<div class="accommodations-row">
-		<div class="accommodations-col">	
-
-			<h3>Cozy Cottages & Intimate Hideaways in the Napa Valley</h3>
-				<div class="left-line">
-		
-				<h5 class="semi-ital">The charming Wine Country Inn features <a href="https://www.winecountryinn.com/gallery/" title="Photo Gallery">beautiful vineyard views</a>, comfortable rooms and quaint cottages unlike any other boutique hotel in the Napa Valley, as well as the highest-quality bedding and in-room <a href="https://www.winecountryinn.com/amenities/" title="luxurious amenities">amenities</a> for a relaxing getaway in California wine country.</h5>
-
-				<p> Located in the heart of wine country, <a href="https://www.winecountryinn.com" title="Wine Country Inn">Wine Country Inn & Cottages</a> is within minutes of world-class wineries, Michelin-starred restaurants, and one-of-a-kind boutique shopping. Yet, this tucked away boutique hotel also allows guests the privilege of a relaxing getaway with its comfortable rooms and soothing amenities. </p>
-
-				<p> At the Wine Country Inn travelers can choose from 5 quaint cottages, 4 spacious suites, and 20 cozy guestrooms. Accommodations at the inn offer the finest quality bedding and amenities, while most rooms feature either a private patio or deck to indulge in vineyard views with a glass of Napa Valley wine. Select rooms also feature <a href="https://www.winecountryinn.com/amenities/in-room-spa-services/" title="Spa hotel">spas.</a>  </p>
-
-				<p> Each reservation at Wine Country Inn provides free parking and complimentary WiFi, as well as a <a href="https://www.winecountryinn.com/amenities/complimentary-wine-country-breakfast/">complimentary country breakfast</a> served daily, complete with local fruits, fresh-baked artisanal breads, and specialty quiches. In addition, the Wine Country Inn & Cottages offers weekly <a href="https://www.winecountryinn.com/amenities/wine-reception-friday-and-saturday-evenings/">wine tastings</a>, making for an authentic Napa Valley experience. </p>
-			</div>
-		</div>
-		</div>	
+    <div class="accommodations-row">
+        <div class="accommodations-col">
+            {% regionblock accommodations_header_2, type:header %}
+            <h3>Cozy Cottages & Intimate Hideaways in the Napa Valley</h3>
+            {% endregionblock %}
+            <div class="left-line">
+                {% regionblock accommodations_header_3, type:header %}
+                <h5 class="semi-ital">The charming Wine Country Inn features <a href="https://www.winecountryinn.com/gallery/" title="Photo Gallery">beautiful vineyard views</a>, comfortable rooms and quaint cottages unlike any other boutique hotel in the Napa Valley, as well as the highest-quality bedding and in-room <a href="https://www.winecountryinn.com/amenities/" title="luxurious amenities">amenities</a> for a relaxing getaway in California wine country.</h5>
+                {% endregionblock %}
+                {% regionblock accommodations_text_1, type:text %}
+                <p> Located in the heart of wine country, <a href="https://www.winecountryinn.com" title="Wine Country Inn">Wine Country Inn & Cottages</a> is within minutes of world-class wineries, Michelin-starred restaurants, and one-of-a-kind boutique shopping. Yet, this tucked away boutique hotel also allows guests the privilege of a relaxing getaway with its comfortable rooms and soothing amenities. </p>
+                <p> At the Wine Country Inn travelers can choose from 5 quaint cottages, 4 spacious suites, and 20 cozy guestrooms. Accommodations at the inn offer the finest quality bedding and amenities, while most rooms feature either a private patio or deck to indulge in vineyard views with a glass of Napa Valley wine. Select rooms also feature <a href="https://www.winecountryinn.com/amenities/in-room-spa-services/" title="Spa hotel">spas.</a>  </p>
+                <p> Each reservation at Wine Country Inn provides free parking and complimentary WiFi, as well as a <a href="https://www.winecountryinn.com/amenities/complimentary-wine-country-breakfast/">complimentary country breakfast</a> served daily, complete with local fruits, fresh-baked artisanal breads, and specialty quiches. In addition, the Wine Country Inn & Cottages offers weekly <a href="https://www.winecountryinn.com/amenities/wine-reception-friday-and-saturday-evenings/">wine tastings</a>, making for an authentic Napa Valley experience. </p>
+                {% endregionblock %}
+            </div>
+        </div>
+    </div>
 </section>
 <section class="accom-list-container">
-{% assign accom-List = site.data._models.accommodations | sort:'order'  %}
-{% for accommodations in accom-List %}
-
-		<div class="accom-item">									        
-    		<div class="accom-item-col no-padding {% cycle '', 'push-lg-7' %}">
-    			<div class="accom-item-text">
-    			
-    			<span>0{{forloop.index }}</span>
+    {% assign accom-List = site.data._models.accommodations | sort:'order'  %}
+    {% for accommodations in accom-List %}
+    <div class="accom-item">
+        <div class="accom-item-col no-padding {% cycle '', 'push-lg-7' %}">
+            <div class="accom-item-text">
+                <span>0{{forloop.index }}</span>
                 <h4 class="m-b-20">{{accommodations.title }}</h4>
-    			<!-- <h6>from {{accommodations.nightprice}} per night </h6> -->
-    			<p>{{accommodations.short_description}}</p>
-    			<div class="btns-group">
-    				<a href="{{accommodations.url_friendly_name}}/" title="Book Offer" class="theme-btn transparent-btn-dark">View Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-    				<a href="{{accommodations.booking_url}}" target="_blank" title="Book Room" class="theme-btn white-dark" target="_blank">Book Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-    			</div>
-    		 </div>	
-    		</div>
-    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-lg-5' %}" style="background-image: url({{accommodations.thumb_image.url}});" >
-    			
-    		</div>						    	
-		</div>		
-	
-{% endfor %}
+                <!-- <h6>from {{accommodations.nightprice}} per night </h6> -->
+                <p>{{accommodations.short_description}}</p>
+                <div class="btns-group">
+                    <a href="{{accommodations.url_friendly_name}}/" title="Book Offer" class="theme-btn transparent-btn-dark">View Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+                    <a href="{{accommodations.booking_url}}" target="_blank" title="Book Room" class="theme-btn white-dark" target="_blank">Book Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-lg-5' %}" style="background-image: url({{accommodations.thumb_image.url}});" >
+        </div>
+    </div>
+    {% endfor %}
 </section>
 <section class="common-banner" style="background-image: url(/assets/images/banner-plenty.jpg);">
-	<div class="banner-content">
-		<h4>Unforgettable Experiences</h4>
-		<div class="ita_large_text left-line">From lively girls’ weekends to relaxing retreats, memories are made at the Wine Country Inn & Cottages</div>
-		<a href="/groups/" target="_blank" class="theme-btn" target="_blank" title="Groups & Events">Groups & Events<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-	</div>
+    <div class="banner-content">
+        {% regionblock accommodations_header_4, type:header %}
+        <h4>Unforgettable Experiences</h4>
+        {% endregionblock %}
+        <div class="ita_large_text left-line">
+            {% regionblock accommodations_text_2, type:text %}From lively girls' weekends to relaxing retreats, memories are made at the Wine Country Inn & Cottages{% endregionblock %}
+        </div>
+        {% regionblock accommodations_text_3, type:text %}
+        <a href="/groups/" target="_blank" class="theme-btn" target="_blank" title="Groups & Events">Groups & Events<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+        {% endregionblock %}
+    </div>
 </section>
 <!-- Sojern Tag v6_js, Pixel Version: 1 -->
 <script>
-  (function () {
+    (function () {
+      
+      var params = {};
     
-    var params = {};
-
-    /* Please do not modify the below code. */
-    var cid = [];
-    var paramsArr = [];
-    var cidParams = [];
-    var pl = document.createElement('script');
-    var defaultParams = {"vid":"hot"};
-    for(key in defaultParams) { params[key] = defaultParams[key]; };
-    for(key in cidParams) { cid.push(params[cidParams[key]]); };
-    params.cid = cid.join('|');
-    for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
-    pl.type = 'text/javascript';
-    pl.async = true;
-    pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
-  })();
+      /* Please do not modify the below code. */
+      var cid = [];
+      var paramsArr = [];
+      var cidParams = [];
+      var pl = document.createElement('script');
+      var defaultParams = {"vid":"hot"};
+      for(key in defaultParams) { params[key] = defaultParams[key]; };
+      for(key in cidParams) { cid.push(params[cidParams[key]]); };
+      params.cid = cid.join('|');
+      for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    })();
 </script>
 <!-- End Sojern Tag -->
