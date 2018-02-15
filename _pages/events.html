@@ -5,60 +5,58 @@ meta_description: "Enjoy any special business or social event in California’s 
 permalink: /events/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/events/events-banner3.jpg);">
-  <h1>Calendar of Events</h1>
+    <h1>{% regionblock events_header_1, type:header %}Calendar of Events{% endregionblock %}</h1>
 </section>
 <section class="event-calendar">
-   <!-- <select class="form-control month-select" id="event-month">
-	  <option value="Show All">All Happenings</option>
-	  <option value="January">January</option>
-	  <option value="February">February</option>
-	  <option value="March">March</option>
-	  <option value="April">April</option>
-	  <option value="May">May</option>
-	  <option value="June">June</option>
-	  <option value="July">July</option>
-	  <option value="August">August</option>
-	  <option value="September">September</option>
-	  <option value="October">October</option>
-	  <option value="November">November</option>
-	  <option value="December">December</option>
-	</select> -->
-{% assign eventPosts = site.data._models.events | sort:'date' | group_by : 'date' %}
-{% for events in eventPosts %}
-      {% assign currentdate = events.name | date: "%B %Y" %}
-      {% if currentdate != datelist %}
-      </div>
-	     <div class="month" data-month="{{ events.name | date: "%B" }}">
-	     <h2><span>{{ events.name | date: "%B" }} {{ events.name | date: "%Y" }} <i class="italic">Events</i></span></h2>
-	   {% else %}
-	    
-	   {%endif%}
-			  {% for event in events.items %}
-			  <div class="event-block">
-				<h5>{{ event.date | date: "%B" }}</h5>
-				<div class="_left"> 
-				 <span class="date">
-				  <h3>{{ event.date | date: "%d" }}</h3>
-				 </span> 
-				</div>
-				<div class="_right">
-				  <h3>{{ event.title }}</h3>
-				  <p>{{ event.description }}</p>
-				  <a href="{{ event.event_website_url }}" title="{{ event.title }}" class="btn-custom no-border" target="_blank">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> 
-				</div>
-			  </div>
-            {% endfor %}
+    <!-- <select class="form-control month-select" id="event-month">
+        <option value="Show All">All Happenings</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+        </select> -->
+    {% assign eventPosts = site.data._models.events | sort:'date' | group_by : 'date' %}
+    {% for events in eventPosts %}
+    {% assign currentdate = events.name | date: "%B %Y" %}
+    {% if currentdate != datelist %}
+    </div>
+    <div class="month" data-month="{{ events.name | date: "%B" }}">
+    <h2><span>{{ events.name | date: "%B" }} {{ events.name | date: "%Y" }} <i class="italic">Events</i></span></h2>
+    {% else %}
+    {%endif%}
+    {% for event in events.items %}
+    <div class="event-block">
+        <h5>{{ event.date | date: "%B" }}</h5>
+        <div class="_left">
+            <span class="date">
+                <h3>{{ event.date | date: "%d" }}</h3>
+            </span>
+        </div>
+        <div class="_right">
+            <h3>{{ event.title }}</h3>
+            <p>{{ event.description }}</p>
+            <a href="{{ event.event_website_url }}" title="{{ event.title }}" class="btn-custom no-border" target="_blank">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> 
+        </div>
+    </div>
+    {% endfor %}
     {% assign datelist = currentdate %} 
- {% endfor %}
- </div>
- <div class="no-results">No Results Found</div>
- </section>
- <section class="common-banner m-t-0" style="background-image: url(/assets/images/events/events-banner2.jpg);">
-	<div class="banner-content">
-		<h4>Escape to comfort in wine country.</h4>
-		<div class="ita_large_text left-line">This authentic Napa Valley boutique inn is perfect for a romantic getaway.</div>
-		<a href="https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513" class="theme-btn" target="_blank">Book Your Stay<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-	</div>
+    {% endfor %}
+    </div>
+    <div class="no-results">No Results Found</div>
 </section>
-
-
+<section class="common-banner m-t-0" style="background-image: url(/assets/images/events/events-banner2.jpg);">
+    <div class="banner-content">
+        {% regionblock events_header_1, type:header %}<h4>Escape to comfort in wine country.</h4>{% endregionblock %}
+        <div class="ita_large_text left-line">{% regionblock events_text_1, type:text %}This authentic Napa Valley boutique inn is perfect for a romantic getaway.{% endregionblock %}</div>
+        {% regionblock events_text_2, type:text %}
+        <a href="https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513" class="theme-btn" target="_blank">Book Your Stay<i class="fa  fa-angle-right" aria-hidden="true"></i></a>{% endregionblock %}
+    </div>
+</section>

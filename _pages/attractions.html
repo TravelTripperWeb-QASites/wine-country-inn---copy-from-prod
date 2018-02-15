@@ -5,167 +5,176 @@ meta_description: "Napa Valley wine tours and attractions leave nothing to be de
 permalink: /attractions/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/activities/activities-banner.jpg);">
- 	<h1>Attractions</h1>
+    <h1>{% regionblock attractions_header_1, type:header %}Attractions{% endregionblock %}</h1>
 </section>
-
 <section class="full-text-section">
-	<div class="text-section-container">
-		<div class="left-gap">			
-			<div class="text-row">
-				<div class="text-col">
-					<h2>For those <span class="italic">adventurous types, </span>looking to explore </h2>
-				</div>
-				<div class="text-col">
-					
-				</div>
-			</div>
-			<div class="text-row">
-				<div class="text-col">
-					<p class="semi-ital left-line">
-						Whether it’s a new blend to try or an exhilarating hike through the valley’s picturesque hills, guests have much to explore throughout the Napa Valley. 
-					</p>
-					 <!-- <a href="#" class="theme-btn" title="Vacation Guide"> Vacation Guide <i class="fa fa-angle-right"></i></a> -->
-				</div>
-				<div class="text-col">
-					<p class="left-gap">
-						Vineyards might be the main draw of wine country, but there are plenty of things to do - many of which just a few minutes from the <a href="https://www.winecountryinn.com/">Wine Country Inn & Cottages</a>. From bike rides through the hills and hot air balloons over the Napa Valley to adventures through the numerous state parks in the area, guests have wine country at their fingertips.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="text-section-container">
+        <div class="left-gap">
+            <div class="text-row">
+                <div class="text-col">
+                	{% regionblock attractions_header_2, type:header %}
+                    <h2>For those <span class="italic">adventurous types, </span>looking to explore </h2>
+                    {% endregionblock %}
+                </div>
+                <div class="text-col">
+                </div>
+            </div>
+            <div class="text-row">
+                <div class="text-col">
+                	{% regionblock attractions_text_1, type:text %}
+                    <p class="semi-ital left-line">
+                        Whether it’s a new blend to try or an exhilarating hike through the valley’s picturesque hills, guests have much to explore throughout the Napa Valley. 
+                    </p>
+                    {% endregionblock %}
+                    <!-- <a href="#" class="theme-btn" title="Vacation Guide"> Vacation Guide <i class="fa fa-angle-right"></i></a> -->
+                </div>
+                <div class="text-col">
+                	{% regionblock attractions_text_2, type:text %}
+                    <p class="left-gap">
+                        Vineyards might be the main draw of wine country, but there are plenty of things to do - many of which just a few minutes from the <a href="https://www.winecountryinn.com/">Wine Country Inn & Cottages</a>. From bike rides through the hills and hot air balloons over the Napa Valley to adventures through the numerous state parks in the area, guests have wine country at their fingertips.
+                    </p>
+                    {% endregionblock %}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="left-image">
-	<div class="left-image-fluid">
-		<div class="left-img-row">			
-			<div class="img-sec bg-cover bg-center-center bg-norepeat" style="background-image: url(/assets/images/activities/wine-train.jpg);">
-				
-			</div>
-			<div class="txt-sec" >
-				<div class="left-gap">
-					<h2>
-						<span class="italic"> Activities </span> within 10 miles
-					</h2>
-					<p class="left-line pb-0">
-						Much of the Napa Valley’s best attractions are within minutes of the Wine Country Inn, thanks to its central location near the charming town of St. Helena. 
-					</p>
-					<br>
-					<ul>
-						<li>Napa Valley Balloon Rides</li>
-						<li>The Culinary Institute of America</li>
-						<li>Bothe-Napa Valley State Park</li>
-						<li>St. Helena Farmer’s Market</li>
-						<li>Robert Louis Stevenson Museum</li>
-						<li>Calistoga Speedway</li>
-						<li>Bale Grist Mill Historic State Park</li>
-					</ul>
-					<!-- <a href="https://napavintners.com/wineries/all_wineries.asp" target="_blank" class="theme-btn">Discover More <i class="fa fa-angle-right"></i> </a> -->
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="left-image-fluid">
+        <div class="left-img-row">
+            <div class="img-sec bg-cover bg-center-center bg-norepeat" style="background-image: url(/assets/images/activities/wine-train.jpg);">
+            </div>
+            <div class="txt-sec" >
+                <div class="left-gap">
+                	{% regionblock attractions_header_3, type:header %}
+                    <h2>
+                        <span class="italic"> Activities </span> within 10 miles
+                    </h2>
+                    {% endregionblock %}
+                    {% regionblock attractions_text_3, type:text %}
+                    <p class="left-line pb-0">
+                        Much of the Napa Valley’s best attractions are within minutes of the Wine Country Inn, thanks to its central location near the charming town of St. Helena. 
+                    </p>
+                    <br>
+                    <ul>
+                        <li>Napa Valley Balloon Rides</li>
+                        <li>The Culinary Institute of America</li>
+                        <li>Bothe-Napa Valley State Park</li>
+                        <li>St. Helena Farmer’s Market</li>
+                        <li>Robert Louis Stevenson Museum</li>
+                        <li>Calistoga Speedway</li>
+                        <li>Bale Grist Mill Historic State Park</li>
+                    </ul>
+                    {% endregionblock %}
+                    <!-- <a href="https://napavintners.com/wineries/all_wineries.asp" target="_blank" class="theme-btn">Discover More <i class="fa fa-angle-right"></i> </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="img-bg-sec bg-center-center bg-cover bg-no-repeat" style="background-image: url(/assets/images/activities/balloon.jpg);">
-	<div class="full-img-container">
-		<div class="left-gap">			
-			<h2>
-				Breathtaking views<br> 
-				of the <span class="italic">Napa Valley</span><br> 
-				below
-			</h2>
-			<div class="small-underline"> </div>
-		</div>		
-	</div>
+    <div class="full-img-container">
+        <div class="left-gap">
+        	{% regionblock attractions_header_4, type:header %}
+            <h2>
+                Breathtaking views<br> 
+                of the <span class="italic">Napa Valley</span><br> 
+                below
+            </h2>
+            {% endregionblock %}
+            <div class="small-underline"> </div>
+        </div>
+    </div>
 </section>
-
 <section class="left-image">
-	<div class="left-image-fluid">
-		<div class="left-img-row">			
-			<div class="txt-sec" >
-				<div class="left-gap">
-					<h2>
-						<span class="italic"> Activities </span> within 30 miles
-					</h2>
-					<p class="left-line pb-0">
-						The Wine Country Inn & Cottages are also just a short drive from the towns of Calistoga and Yountville, as well as the valley’s namesake, Napa.
-					</p>
-					<br>
-					<ul>
-						<li>Napa Valley Wine Train</li>
-						<li>Mt. St. Helena Golf Course</li>
-						<li>Napa Valley Fairgrounds</li>
-						<li>Old Faithful Geyser of California</li>
-						<li>Petrified Forest</li>
-						<li>Uptown Theatre Napa</li>
-						<li>Napa Valley Bike Tours</li>					
-					</ul>
-					<!-- <a href="https://napavintners.com/wineries/all_wineries.asp" target="_blank" class="theme-btn">Discover More <i class="fa fa-angle-right"></i> </a> -->
-				</div>
-			</div>
-			<div class="img-sec bg-cover bg-center-center bg-norepeat" style="background-image: url(/assets/images/activities/geyser.jpg);">
-				
-			</div>
-		</div>
-	</div>
+    <div class="left-image-fluid">
+        <div class="left-img-row">
+            <div class="txt-sec" >
+                <div class="left-gap">
+                	{% regionblock attractions_header_5, type:header %}
+                    <h2>
+                        <span class="italic"> Activities </span> within 30 miles
+                    </h2>
+                    {% endregionblock %}
+                    {% regionblock attractions_text_4, type:text %}
+                    <p class="left-line pb-0">
+                        The Wine Country Inn & Cottages are also just a short drive from the towns of Calistoga and Yountville, as well as the valley’s namesake, Napa.
+                    </p>
+                    <br>
+                    <ul>
+                        <li>Napa Valley Wine Train</li>
+                        <li>Mt. St. Helena Golf Course</li>
+                        <li>Napa Valley Fairgrounds</li>
+                        <li>Old Faithful Geyser of California</li>
+                        <li>Petrified Forest</li>
+                        <li>Uptown Theatre Napa</li>
+                        <li>Napa Valley Bike Tours</li>
+                    </ul>
+                    {% endregionblock %}
+                    <!-- <a href="https://napavintners.com/wineries/all_wineries.asp" target="_blank" class="theme-btn">Discover More <i class="fa fa-angle-right"></i> </a> -->
+                </div>
+            </div>
+            <div class="img-sec bg-cover bg-center-center bg-norepeat" style="background-image: url(/assets/images/activities/geyser.jpg);">
+            </div>
+        </div>
+    </div>
 </section>
-
 <section  class="left-image bg-cover bg-center-center bg-norepeat" style="background-image: url(/assets/images/activities/redwoods.jpg);">
-	<div class="left-image-fluid">
-		<div class="left-img-row black-content">			
-			<div class="txt-sec" >
-				<div class="left-gap">
-					<h2>
-						Day Trips from the<br> 
-						<span class="italic">Napa Valley</span> 
-					</h2>
-					<p class="left-line pb-0">
-						There’s also much to see outside the Napa Valley, including many of the country’s most impressive national parks, as well as California’s most intriguing cities, making a day trip from the Wine Country Inn well worth the drive.
-					</p>
-					<br>
-					<ul>
-						<li>Redwood National Park</li>
-						<li>San Francisco</li>
-						<li>Sacramento</li>
-						<li>Yosemite National Park</li>
-						<li>El Dorado National Forest</li>
-					</ul>
-					<!-- <a href="https://napavintners.com/wineries/all_wineries.asp" target="_blank" class="theme-btn white-theme">Discover More <i class="fa fa-angle-right"></i> </a> -->
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="left-image-fluid">
+        <div class="left-img-row black-content">
+            <div class="txt-sec" >
+                <div class="left-gap">
+                	{% regionblock attractions_header_6, type:header %}
+                    <h2>
+                        Day Trips from the<br> 
+                        <span class="italic">Napa Valley</span> 
+                    </h2>
+                    {% endregionblock %}
+                    {% regionblock attractions_text_5, type:text %}
+                    <p class="left-line pb-0">
+                        There’s also much to see outside the Napa Valley, including many of the country’s most impressive national parks, as well as California’s most intriguing cities, making a day trip from the Wine Country Inn well worth the drive.
+                    </p>
+                    <br>
+                    <ul>
+                        <li>Redwood National Park</li>
+                        <li>San Francisco</li>
+                        <li>Sacramento</li>
+                        <li>Yosemite National Park</li>
+                        <li>El Dorado National Forest</li>
+                    </ul>
+                    {% endregionblock %}
+                    <!-- <a href="https://napavintners.com/wineries/all_wineries.asp" target="_blank" class="theme-btn white-theme">Discover More <i class="fa fa-angle-right"></i> </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="home-events-more">
     <div class="home-events">
-		<div class="items-heading-row">
-			<a href="/events/" class="view-all-items">view all events <i class="fa fa-angle-right" aria-hidden="true"></i></a>	
-			<div class="items-heading-text">			
-				<h2 class="">Napa Valley <i class="italic">events</i> <span class="right-line"></span></h2>
-			</div>
-		</div>
-  
-
-{% assign eventlist = site.data._models.events | sort:'date' %} 
+        <div class="items-heading-row">
+            <a href="/events/" class="view-all-items">view all events <i class="fa fa-angle-right" aria-hidden="true"></i></a>	
+            <div class="items-heading-text">
+            	{% regionblock attractions_header_7, type:header %}
+                <h2 class="">Napa Valley <i class="italic">events</i> <span class="right-line"></span></h2>
+                {% endregionblock %}
+            </div>
+        </div>
+        {% assign eventlist = site.data._models.events | sort:'date' %} 
         <div class="owl-carousel owl-theme">
-            
             {% for events in eventlist limit:6 %}  
-                <div class="event-block">
-	                <h5>{{ events.date | date: "%B" }}</h5>
-	                <div class="_left">
-	                     <span class="date">
-	                         <h3>{{ events.date | date: "%d" }}</h3>
-	                     </span>
-	                </div>
-	                <div class="_right">
-	                     <h3>{{ events.title }}</h3>
-	                     <p>{{ events.description }}</p>
-				          <a href="{{ events.event_website_url }}" title="{{ events.title }}" class="btn-custom no-border" target="_blank">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-	                </div>
-	            </div>
- 
+            <div class="event-block">
+                <h5>{{ events.date | date: "%B" }}</h5>
+                <div class="_left">
+                    <span class="date">
+                        <h3>{{ events.date | date: "%d" }}</h3>
+                    </span>
+                </div>
+                <div class="_right">
+                    <h3>{{ events.title }}</h3>
+                    <p>{{ events.description }}</p>
+                    <a href="{{ events.event_website_url }}" title="{{ events.title }}" class="btn-custom no-border" target="_blank">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
             {% endfor %}
             <!-- <div class="event-block">
                 <h5>January</h5>
@@ -179,9 +188,7 @@ permalink: /attractions/
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
                 </div>
-            </div> -->
-
+                </div> -->
         </div>
     </div>
-    
 </section>
