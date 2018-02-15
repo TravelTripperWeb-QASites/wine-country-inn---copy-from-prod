@@ -19,6 +19,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/thumb_garden.jpg",
       "git_file_name": "_assets/image_data/garden.json",
       "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/garden.jpg"
+    },
+    {
+      "name": "food",
+      "file_name": "food.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/food.jpg",
+      "tags": "area",
+      "file_size": 253444,
+      "width": 1000,
+      "height": 667,
+      "description": "",
+      "date_added": "2018-02-15-045959",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/large_food.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/medium_food.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/small_food.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/xsmall_food.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/thumb_food.jpg",
+      "git_file_name": "_assets/image_data/food.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/food.jpg"
     }
   ],
   "description": ""
