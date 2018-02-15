@@ -19,6 +19,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043706/thumb_kitchen.jpg",
       "git_file_name": "_assets/image_data/kitchen.json",
       "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043706/kitchen.jpg"
+    },
+    {
+      "name": "bedroom",
+      "file_name": "bedroom.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043704/bedroom.jpg",
+      "tags": "accommodations",
+      "file_size": 172104,
+      "width": 1200,
+      "height": 800,
+      "description": "",
+      "date_added": "2018-02-15-043704",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043704/large_bedroom.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043704/medium_bedroom.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043704/small_bedroom.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043704/xsmall_bedroom.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043704/thumb_bedroom.jpg",
+      "git_file_name": "_assets/image_data/bedroom.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-043704/bedroom.jpg"
     }
   ],
   "description": ""
