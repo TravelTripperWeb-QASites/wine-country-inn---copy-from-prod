@@ -38,6 +38,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/thumb_food.jpg",
       "git_file_name": "_assets/image_data/food.json",
       "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045959/food.jpg"
+    },
+    {
+      "name": "dog",
+      "file_name": "dog.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045956/dog.jpg",
+      "tags": "area",
+      "file_size": 198119,
+      "width": 1000,
+      "height": 667,
+      "description": "",
+      "date_added": "2018-02-15-045956",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045956/large_dog.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045956/medium_dog.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045956/small_dog.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045956/xsmall_dog.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045956/thumb_dog.jpg",
+      "git_file_name": "_assets/image_data/dog.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045956/dog.jpg"
     }
   ],
   "description": ""
