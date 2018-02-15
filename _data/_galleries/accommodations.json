@@ -76,6 +76,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/thumb_bedroom-with-lamp.jpg",
       "git_file_name": "_assets/image_data/bedroom-with-lamp.json",
       "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/bedroom-with-lamp.jpg"
+    },
+    {
+      "name": "bedroom-with-food",
+      "file_name": "bedroom-with-food.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044743/bedroom-with-food.jpg",
+      "tags": "accommodations",
+      "file_size": 244824,
+      "width": 1000,
+      "height": 667,
+      "description": "",
+      "date_added": "2018-02-15-044743",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044743/large_bedroom-with-food.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044743/medium_bedroom-with-food.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044743/small_bedroom-with-food.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044743/xsmall_bedroom-with-food.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044743/thumb_bedroom-with-food.jpg",
+      "git_file_name": "_assets/image_data/bedroom-with-food.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044743/bedroom-with-food.jpg"
     }
   ],
   "description": ""
