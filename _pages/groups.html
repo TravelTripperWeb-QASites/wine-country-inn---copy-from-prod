@@ -5,134 +5,155 @@ meta_description: "Enjoy any special business or social event in California’s 
 permalink: /groups/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/events/events-banner.jpg);">
- 	<h1>Groups</h1>
+    <h1>{% regionblock groups_header_1, type:header %}Groups{% endregionblock %}</h1>
 </section>
-
 <section class="text-with-bg bg-center-bottom bg-cover bg-no-repeat" style="background-image: url(/assets/images/events/napa-valley.jpg);">
-	<div class="text-with-bg-container">
-		<div class="text-with-bg-row">
-			<div class="left-part">
-				<div class="left-gap">					
-					<h2 class="p-b-50">
-						A relaxing Napa Valley retreat for <span class="italic"> every occasion </span>
-					</h2>					
-				</div>
-			</div>
-			<div class="right-part">
-				<div class="left-gap">					
-
-				</div>
-			</div>
-		</div>
-		<div class="text-with-bg-row">
-			<div class="left-part">
-				<div class="left-gap">					
-					<p class="left-line p-b-45 italic">
-						Enjoy any special celebration or social event in California’s scenic Napa Valley wine country at the Wine Country Inn & Cottages. The pleasant and professional staff will ensure an unforgettable get-together or special occasion in an intimate wine country setting, while the hotel's indoor and outdoor spaces are perfect for elopements, girls' weekends, family reunions, and special celebrations.
-					</p>
-					<a href="/rfp/" class="theme-btn" title="Request For Proposal">Request For Proposal <i class="fa fa-angle-right"></i></a>
-				</div>
-			</div>
-			<div class="right-part">
-				<div class="left-gap">					
-					<p class="left-line p-b-25">
-						With 29 comfortable guestrooms and suites at this <a href="https://www.winecountryinn.com/">boutique bed and breakfast</a>, the Wine Country Inn & Cottages is an ideal location for group events in an intimate setting. On site is The Living Room, a wonderful gathering place with comfortable seating and attractive furnishings, while the hotel's exterior grounds feature large patios, broad walkways, and outdoor spaces with <a href="https://www.winecountryinn.com/gallery/" title="Gallery">beautiful vineyard views and mountain vistas</a>, which provide a great backdrop for both weddings and get-togethers.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="text-with-bg-container">
+        <div class="text-with-bg-row">
+            <div class="left-part">
+                <div class="left-gap">
+                    {% regionblock groups_header_2, type:header %}
+                    <h2 class="p-b-50">
+                        A relaxing Napa Valley retreat for <span class="italic"> every occasion </span>
+                    </h2>
+                    {% endregionblock %}
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="left-gap">					
+                </div>
+            </div>
+        </div>
+        <div class="text-with-bg-row">
+            <div class="left-part">
+                <div class="left-gap">
+                    {% regionblock groups_text_1, type:text %}
+                    <p class="left-line p-b-45 italic">
+                        Enjoy any special celebration or social event in California’s scenic Napa Valley wine country at the Wine Country Inn & Cottages. The pleasant and professional staff will ensure an unforgettable get-together or special occasion in an intimate wine country setting, while the hotel's indoor and outdoor spaces are perfect for elopements, girls' weekends, family reunions, and special celebrations.
+                    </p>
+                    {% endregionblock %}
+                    {% regionblock groups_text_2, type:text %}
+                    <a href="/rfp/" class="theme-btn" title="Request For Proposal">Request For Proposal <i class="fa fa-angle-right"></i></a>{% endregionblock %}
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="left-gap">
+                    {% regionblock groups_text_3, type:text %}
+                    <p class="left-line p-b-25">
+                        With 29 comfortable guestrooms and suites at this <a href="https://www.winecountryinn.com/">boutique bed and breakfast</a>, the Wine Country Inn & Cottages is an ideal location for group events in an intimate setting. On site is The Living Room, a wonderful gathering place with comfortable seating and attractive furnishings, while the hotel's exterior grounds feature large patios, broad walkways, and outdoor spaces with <a href="https://www.winecountryinn.com/gallery/" title="Gallery">beautiful vineyard views and mountain vistas</a>, which provide a great backdrop for both weddings and get-togethers.
+                    </p>
+                    {% endregionblock %}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="full-text-section side-image">
-	<div class="text-section-container">
-		<div class="left-gap">			
-			<div class="text-row">
-				<div class="text-col">
-					<h2><span class="italic"> Girls' </span> Trips</h2>
-					<p class="left-line">
-						<a href="https://www.winecountryinn.com/" title="Wine Country Inn">The Wine Country Inn & Cottages</a> is not only great for getaways and vacations, but also for girls’ trips as well. Whether it’s a bachelorette weekend or just because, The Wine Country Inn & Cottages provides the perfect setting for a weekend away with the girls. In addition, the hotel staff will help plan any event to ensure that everything goes smoothly from start to finish, as well as provide local recommendations in terms of <a href="https://www.winecountryinn.com/wineries/">wineries</a>, <a href="https://www.winecountryinn.com/dining/">restaurants</a> and other <a href="https://www.winecountryinn.com/attractions/">attractions</a> in Napa Valley.
-					</p>
-					<a href="/rfp/" class="theme-btn" title="Request For Proposal">Request For Proposal <i class="fa fa-angle-right"></i></a>
-				</div>
-				<div class="text-col">
-					<div class="left-gap">						
-						<img src="/assets/images/events/meeting.jpg" alt="Food" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="text-section-container">
+        <div class="left-gap">
+            <div class="text-row">
+                <div class="text-col">
+                    {% regionblock groups_header_3, type:header %}
+                    <h2><span class="italic"> Girls' </span> Trips</h2>
+                    {% endregionblock %}
+                    {% regionblock groups_text_4, type:text %}
+                    <p class="left-line">
+                        <a href="https://www.winecountryinn.com/" title="Wine Country Inn">The Wine Country Inn & Cottages</a> is not only great for getaways and vacations, but also for girls’ trips as well. Whether it’s a bachelorette weekend or just because, The Wine Country Inn & Cottages provides the perfect setting for a weekend away with the girls. In addition, the hotel staff will help plan any event to ensure that everything goes smoothly from start to finish, as well as provide local recommendations in terms of <a href="https://www.winecountryinn.com/wineries/">wineries</a>, <a href="https://www.winecountryinn.com/dining/">restaurants</a> and other <a href="https://www.winecountryinn.com/attractions/">attractions</a> in Napa Valley.
+                    </p>
+                    {% endregionblock %}
+                    {% regionblock groups_text_5, type:text %}
+                    <a href="/rfp/" class="theme-btn" title="Request For Proposal">Request For Proposal <i class="fa fa-angle-right"></i></a>{% endregionblock %}
+                </div>
+                <div class="text-col">
+                    <div class="left-gap">		
+                        {% regionblock groups_image_1, type:image %}				
+                        <img src="/assets/images/events/meeting.jpg" alt="Food" />{% endregionblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="bottom-bg events-page-bottom bg-center-center bg-cover bg-no-repeat" style="background-image: url(/assets/images/events/events-bottom-bg.jpg);">
-	<div class="bottom-container">
-		<div class="bottom-row">
-			<div class="bottom-img">
-				<img src="/assets/images/events/events-bottom.jpg" alt="Elopement" />
-			</div>
-			<div class="bottom-text">
-				<div class="left-gap">					
-					<h2 class="p-b-50">
-						<span><span class="italic"> Engagements, Elopements </span> & Honeymoons</span>
-					</h2>
-					<p class="left-line p-b-80">
-					Love is in the air in the Napa Valley. A magical place for engagements, elopements, and honeymoons, the Wine Country Inn & Cottages can help plan any romantic event. And if a spontaneous elopement is in the works, a Napa Valley wedding can be seamlessly scheduled with the hotel’s elopement package. For more information, contact us today or visit our page on the Napa Valley Elopements website.
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="bottom-container">
+        <div class="bottom-row">
+            <div class="bottom-img">
+                {% regionblock groups_image_2, type:image %}
+                <img src="/assets/images/events/events-bottom.jpg" alt="Elopement" />{% endregionblock %}
+            </div>
+            <div class="bottom-text">
+                <div class="left-gap">
+                    {% regionblock groups_header_4, type:header %}
+                    <h2 class="p-b-50">
+                        <span><span class="italic"> Engagements, Elopements </span> & Honeymoons</span>
+                    </h2>
+                    {% endregionblock %}
+                    {% regionblock groups_text_6, type:text %}
+                    <p class="left-line p-b-80">
+                        Love is in the air in the Napa Valley. A magical place for engagements, elopements, and honeymoons, the Wine Country Inn & Cottages can help plan any romantic event. And if a spontaneous elopement is in the works, a Napa Valley wedding can be seamlessly scheduled with the hotel’s elopement package. For more information, contact us today or visit our page on the Napa Valley Elopements website.
+                    </p>
+                    {% endregionblock %}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="full-text-section side-image">
-	<div class="text-section-container">
-		<div class="left-gap">			
-			<div class="text-row">
-				<div class="text-col">
-					<h2>Friends and Family <span class="italic">Reunions</span></h2>
-					<p class="left-line">
-						The Wine Country Inn & Cottages is also the ideal spot for a family get-together or a reunion among friends. Along with its cozy accommodations and <a href="https://www.winecountryinn.com/gallery/">scenic views</a>, this boutique hotel offers a serene setting for catching up with old friends and spending quality time with loved ones. In addition, the courteous staff at the Wine Country Inn & Cottages can help organize group events and outings in the Napa Valley, making for a retreat filled with both relaxation and adventure.
-					</p>
-					<a href="/rfp/" class="theme-btn" title="Request For Proposal">Request For Proposal <i class="fa fa-angle-right"></i></a>
-				</div>
-				<div class="text-col">
-					<div class="left-gap">						
-						<img src="/assets/images/events/family.jpg" alt="Family" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="text-section-container">
+        <div class="left-gap">
+            <div class="text-row">
+                <div class="text-col">
+                    {% regionblock groups_header_5, type:header %}
+                    <h2>Friends and Family <span class="italic">Reunions</span></h2>
+                    {% endregionblock %}
+                    {% regionblock groups_text_7, type:text %}
+                    <p class="left-line">
+                        The Wine Country Inn & Cottages is also the ideal spot for a family get-together or a reunion among friends. Along with its cozy accommodations and <a href="https://www.winecountryinn.com/gallery/">scenic views</a>, this boutique hotel offers a serene setting for catching up with old friends and spending quality time with loved ones. In addition, the courteous staff at the Wine Country Inn & Cottages can help organize group events and outings in the Napa Valley, making for a retreat filled with both relaxation and adventure.
+                    </p>
+                    {% endregionblock %}
+                    {% regionblock groups_text_8, type:text %}
+                    <a href="/rfp/" class="theme-btn" title="Request For Proposal">Request For Proposal <i class="fa fa-angle-right"></i></a>{% endregionblock %}
+                </div>
+                <div class="text-col">
+                    <div class="left-gap">			
+                        {% regionblock groups_image_3, type:image %}			
+                        <img src="/assets/images/events/family.jpg" alt="Family" />{% endregionblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="common-banner m-t-0" style="background-image: url(/assets/images/events/business.jpg);">
-	<div class="banner-content">
-		<h4><span class="italic">Corporate Retreats</span> in the Napa Valley</h4>
-		<div class="ita_large_text left-line">The Wine Country Inn can host team-building retreats and small business meetings in the comfortable setting of the Napa Valley.</div>
-		<a href="/rfp/" class="theme-btn" target="_blank">Request For Proposal<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-	</div>
+    <div class="banner-content">
+        {% regionblock groups_header_6, type:header %}
+        <h4><span class="italic">Corporate Retreats</span> in the Napa Valley</h4>
+        {% endregionblock %}
+        <div class="ita_large_text left-line">{% regionblock groups_text_9, type:text %}The Wine Country Inn can host team-building retreats and small business meetings in the comfortable setting of the Napa Valley.{% endregionblock %}</div>
+        {% regionblock groups_text_10, type:text %}
+        <a href="/rfp/" class="theme-btn" target="_blank">Request For Proposal<i class="fa  fa-angle-right" aria-hidden="true"></i></a>{% endregionblock %}
+    </div>
 </section>
-
 <!-- Sojern Tag v6_js, Pixel Version: 1 -->
 <script>
-  (function () {
+    (function () {
+      
+      var params = {};
     
-    var params = {};
-
-    /* Please do not modify the below code. */
-    var cid = [];
-    var paramsArr = [];
-    var cidParams = [];
-    var pl = document.createElement('script');
-    var defaultParams = {"vid":"hot"};
-    for(key in defaultParams) { params[key] = defaultParams[key]; };
-    for(key in cidParams) { cid.push(params[cidParams[key]]); };
-    params.cid = cid.join('|');
-    for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
-    pl.type = 'text/javascript';
-    pl.async = true;
-    pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
-  })();
+      /* Please do not modify the below code. */
+      var cid = [];
+      var paramsArr = [];
+      var cidParams = [];
+      var pl = document.createElement('script');
+      var defaultParams = {"vid":"hot"};
+      for(key in defaultParams) { params[key] = defaultParams[key]; };
+      for(key in cidParams) { cid.push(params[cidParams[key]]); };
+      params.cid = cid.join('|');
+      for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    })();
 </script>
 <!-- End Sojern Tag -->

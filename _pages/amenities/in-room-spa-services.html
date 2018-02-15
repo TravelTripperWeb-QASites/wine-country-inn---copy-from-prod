@@ -5,12 +5,17 @@ meta_description: "Wine Country Inn is a beautiful Napa Valley hotel with vineya
 permalink: /amenities/in-room-spa-services/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/amenities/amenities3.jpg);">
- 	<h1>MASSAGE THERAPY</h1>
+    
+ 	<h1>{% regionblock massage_therapy_header_1, type:header %}MASSAGE THERAPY{% endregionblock  %}</h1>
+     
 </section>
 
 <section class="amenities-container no-padding">
     <div class="left-line">
+        {% regionblock massage_therapy_header_2, type:header %}
         <h4>St. Helena & Napa Valley Spa Packages</h4>
+         {% endregionblock  %}
+        {% regionblock massage_therapy_text_1, type:text %}
         <p>Melt away tension and stress with our personalized in-room massage and spa packages at our very own Napa Valley spa. At our <a href="https://www.winecountryinn.com/" title="Wine Country Inn">luxury St. Helena spa hotel</a>, we offer a variety of massages and Napa Valley spa packages from deep tissue massages to cleansing facials that are sure to create total relaxation. At our St. Helena spa, our seasoned massage therapists bring the spa experience to you, in the comfort and privacy of your room, so that you may enjoy a truly relaxing and memorable stay here in the Wine Country!</p>
         <p>Browse our complete list of St. Helena and Napa Valley spa packages below and please contact us with any questions regarding our services.</p>
         <h3>Spa Menu for Your In-Room Treatments</h3>
@@ -42,17 +47,8 @@ permalink: /amenities/in-room-spa-services/
         <p>When booking your treatment, please let us know if you prefer a male or female therapist or have any physical conditions that would limit your treatment.</p>
         <h3>24-Hour Cancellation Policy</h3>
         <p>If another diversion emerges, cancellations for treatments must be made at least 24 hours before the appointment or guests will be billed for the full price of the treatment you booked plus an 18% gratuity. To cancel please contact the Wine Country Inn & Cottages Guest Service Manager.</p>
+        {% endregionblock  %}
     </div>
 </section>
 
-
-<section class="common-banner" style="background-image: url(/assets/images/banner-plenty.jpg);">
-	
-	<div class="banner-content">
-		<h4>Unforgettable Experiences</h4>
-		<div class="ita_large_text left-line">From lively girls’ weekends to relaxing retreats, memories are made at the Wine Country Inn & Cottages</div>
-		<a href="/events/" target="_blank" class="theme-btn" target="_blank" title="Groups & Events">Groups & Events<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-
-	</div>
-
-</section>
+{% include unforgettable-experiences.html %}
