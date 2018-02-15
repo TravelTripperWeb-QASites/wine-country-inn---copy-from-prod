@@ -1,0 +1,17 @@
+{
+  "title": {
+    "required": true
+  },
+  "caption": {
+    "type": "richtext",
+    "required": true
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "sort_order": {
+    "type": "integer",
+    "required": true
+  }
+}

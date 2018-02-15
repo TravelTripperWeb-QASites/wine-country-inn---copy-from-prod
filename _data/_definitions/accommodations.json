@@ -28,7 +28,6 @@
     {"required": true,"type": "image","label": "Gallery Image 3" },
 "g_image4":
     {"required": true, "type": "image", "label": "Gallery Image 4" },
-
 "booking_url":
 	{"type":"text"},
 "amenities":

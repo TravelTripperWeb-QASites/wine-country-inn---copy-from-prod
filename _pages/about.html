@@ -5,129 +5,147 @@ meta_description: "Stay at the Wine Country Inn, highly regarded as one of the b
 permalink: /about/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/about/about-banner.jpg);">
- 	<h1>About</h1>
+    
+    <h1>{% regionblock about_header_1, type:header %}About{% endregionblock %}</h1>
+    
 </section>
-
 <section class="full-text-section">
-	<div class="text-section-container">
-		<div class="left-gap">			
-			<div class="text-row">
-				<div class="text-col">
-					<h2>Charming Accommodations <span class="italic">in the Heart </span> of Napa Valley Wine Country</h2>
-
-				</div>
-				<div class="text-col">
-					
-				</div>
-			</div>
-			<div class="text-row">
-				<div class="text-col">
-					<p class="semi-ital left-line">
-						Surrounded by acres of world-class vineyards and award-winning wineries, the Wine Country Inn & Cottages is a one-of-a-kind retreat in the Napa Valley.
-					</p>
-					<a href="/contact/" class="theme-btn" title="Contact Us"> Contact Us <i class="fa fa-angle-right"></i></a>
-				</div>
-				<div class="text-col">
-					<p class="left-gap">
-						Set in a vineyard near the historic towns of <a href="https://www.winecountryinn.com/blog/where-is-st-helena/" title="St Helena">St. Helena</a> and Calistoga, California, the <a href="https://www.winecountryinn.com/" title="Wine Country Inn">Wine Country Inn & Cottages</a> has been continually recognized as one of the Napa Valley’s finest boutique hotels for <a href="https://www.winecountryinn.com/offers/" title="Romantic breaks">romantic getaways</a>, relaxing escapes, and social retreats. Along with breathtaking views from its guest rooms’ private patios and decks, the Wine Country Inn & Cottages offers <a href="https://www.winecountryinn.com/accommodations/" title="accommodations">charming accommodations</a> and <a href="https://www.winecountryinn.com/amenities/" title="amenities">unique amenities</a> for an unforgettable trip to the Napa Valley.
-					</p>
-					<p class="left-gap p-t-30">	
-						From <a href="https://www.winecountryinn.com/accommodations/" title="Accommodation">comfortable rooms to spacious cottages</a>, each accommodation at the Wine Country & Inn Cottages is <a href="https://www.winecountryinn.com/amenities/pet-friendly-hotel/" title="Pet Friendly hotel">pet-friendly</a>. Additionally, accommodations include wireless internet, a complimentary bottle of Napa Valley wine, and a private refrigerator stocked with non-alcoholic beverages. This charming Napa Valley inn also offers a <a href="https://www.winecountryinn.com/amenities/complimentary-wine-country-breakfast/">complimentary country breakfast</a>, <a href="https://www.winecountryinn.com/amenities/wine-reception-friday-and-saturday-evenings/">weekly wine tastings</a>, knowledgeable and insightful concierge services, <a href="https://www.winecountryinn.com/amenities/in-room-spa-services/">in-room massages</a>, as well as a picturesque <a href="https://www.winecountryinn.com/amenities/heated-swimming-pool-and-spa/">pool and hot tub</a> overlooking the neighboring vineyards.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="text-section-container">
+        <div class="left-gap">
+            <div class="text-row">
+                <div class="text-col">
+                    {% regionblock about_header_2, type:header %}
+                    <h2>Charming Accommodations <span class="italic">in the Heart </span> of Napa Valley Wine Country</h2>
+                    {% endregionblock %}
+                </div>
+                <div class="text-col">
+                </div>
+            </div>
+            <div class="text-row">
+                <div class="text-col">
+                    {% regionblock about_text_1, type:text %}
+                    <p class="semi-ital left-line">
+                        Surrounded by acres of world-class vineyards and award-winning wineries, the Wine Country Inn & Cottages is a one-of-a-kind retreat in the Napa Valley.
+                    </p>
+                    {% endregionblock %}
+                    {% regionblock about_text_2, type:text %}
+                    <a href="/contact/" class="theme-btn" title="Contact Us"> Contact Us <i class="fa fa-angle-right"></i></a>
+                    {% endregionblock %}
+                </div>
+                <div class="text-col">
+                    {% regionblock about_text_3, type:text %}
+                    <p class="left-gap">
+                        Set in a vineyard near the historic towns of <a href="https://www.winecountryinn.com/blog/where-is-st-helena/" title="St Helena">St. Helena</a> and Calistoga, California, the <a href="https://www.winecountryinn.com/" title="Wine Country Inn">Wine Country Inn & Cottages</a> has been continually recognized as one of the Napa Valley’s finest boutique hotels for <a href="https://www.winecountryinn.com/offers/" title="Romantic breaks">romantic getaways</a>, relaxing escapes, and social retreats. Along with breathtaking views from its guest rooms’ private patios and decks, the Wine Country Inn & Cottages offers <a href="https://www.winecountryinn.com/accommodations/" title="accommodations">charming accommodations</a> and <a href="https://www.winecountryinn.com/amenities/" title="amenities">unique amenities</a> for an unforgettable trip to the Napa Valley.
+                    </p>
+                    <p class="left-gap p-t-30">	
+                        From <a href="https://www.winecountryinn.com/accommodations/" title="Accommodation">comfortable rooms to spacious cottages</a>, each accommodation at the Wine Country & Inn Cottages is <a href="https://www.winecountryinn.com/amenities/pet-friendly-hotel/" title="Pet Friendly hotel">pet-friendly</a>. Additionally, accommodations include wireless internet, a complimentary bottle of Napa Valley wine, and a private refrigerator stocked with non-alcoholic beverages. This charming Napa Valley inn also offers a <a href="https://www.winecountryinn.com/amenities/complimentary-wine-country-breakfast/">complimentary country breakfast</a>, <a href="https://www.winecountryinn.com/amenities/wine-reception-friday-and-saturday-evenings/">weekly wine tastings</a>, knowledgeable and insightful concierge services, <a href="https://www.winecountryinn.com/amenities/in-room-spa-services/">in-room massages</a>, as well as a picturesque <a href="https://www.winecountryinn.com/amenities/heated-swimming-pool-and-spa/">pool and hot tub</a> overlooking the neighboring vineyards.
+                    </p>
+                    {% endregionblock %}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="img-bg-sec bg-center-center bg-cover bg-no-repeat"  style="background-image: url(/assets/images/about/full-img-bg.jpg);">
-	<div class="full-img-container">
-		<div class="left-gap">			
-			<h2> Perfect for a Napa Valley honeymoon, rejuvenating escape, or a <span class="italic"> romantic getaway </span> </h2>
-			<div class="small-underline">
-				
-			</div>
-		</div>		
-	</div>
+    <div class="full-img-container">
+        <div class="left-gap">
+            {% regionblock about_header_3, type:header %}
+            <h2> Perfect for a Napa Valley honeymoon, rejuvenating escape, or a <span class="italic"> romantic getaway </span> </h2>
+            {% endregionblock %}
+            <div class="small-underline">
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="full-text-section video-sec">
-	<div class="text-section-container">
-		<div class="left-gap">			
-			<div class="text-row">
-				<div class="text-col">
-					<h2>Spectacular views and <span class="italic"> pet-friendly accomodations </span>in the Napa Valley</h2>
-				</div>
-				<div class="text-col">
-					
-				</div>
-			</div>
-			<div class="text-row">
-				<div class="text-col">
-					<p class="semi-ital left-line">
-						Nestled among rolling hills and postcard-worthy views, The Wine Country Inn & Cottages is perfect for a Napa Valley honeymoon, rejuvenating escape with one's partner, or a weekend getaway with the girls. With its central location, the Wine Country Inn & Cottages is the ideal spot to explore all the Napa Valley has to offer.
-					</p>
-					<a href="/gallery/" class="theme-btn" title="View Gallery"> View Gallery <i class="fa fa-angle-right"></i></a>
-					<a href="/accommodations/" class="theme-btn transparent-dark" title="All Accommodations"> All Accommodations <i class="fa fa-angle-right"></i></a>
-				</div>
-				<div class="text-col">
-					<p class="left-gap">
-						At the <a href="https://www.winecountryinn.com/">Wine Country Inn & Cottages</a>, guests wake up to <a href="https://www.winecountryinn.com/gallery/" title="Wine Country Inn photos">stunning views</a> of the neighboring Duckhorn Vineyards with an authentic country breakfast before setting out to <a href="https://www.winecountryinn.com/attractions/" title="Napa Valley">explore the Napa Valley</a>. Using the Wine Country Inn & Cottages as a starting point, travelers can tour the region’s notable <a href="https://www.winecountryinn.com/wineries/" title="Napa Valley wineries">wineries</a> and charming towns, as well as dine at its acclaimed <a href="https://www.winecountryinn.com/dining/" title="restaurants">Michelin-starred restaurants</a> and down-home roadside eateries. 
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="text-section-container">
+        <div class="left-gap">
+            <div class="text-row">
+                <div class="text-col">
+                    {% regionblock about_header_4, type:header %}
+                    <h2>Spectacular views and <span class="italic"> pet-friendly accomodations </span>in the Napa Valley</h2>
+                    {% endregionblock %}
+                </div>
+                <div class="text-col">
+                </div>
+            </div>
+            <div class="text-row">
+                <div class="text-col">
+                    {% regionblock about_text_4, type:text %}
+                    <p class="semi-ital left-line">
+                        Nestled among rolling hills and postcard-worthy views, The Wine Country Inn & Cottages is perfect for a Napa Valley honeymoon, rejuvenating escape with one's partner, or a weekend getaway with the girls. With its central location, the Wine Country Inn & Cottages is the ideal spot to explore all the Napa Valley has to offer.
+                    </p>
+                    {% endregionblock %}
+                    {% regionblock about_text_5, type:text %}
+                    <a href="/gallery/" class="theme-btn" title="View Gallery"> View Gallery <i class="fa fa-angle-right"></i></a>
+                    <a href="/accommodations/" class="theme-btn transparent-dark" title="All Accommodations"> All Accommodations <i class="fa fa-angle-right"></i></a>
+                    {% endregionblock %}
+                </div>
+                <div class="text-col">
+                    {% regionblock about_text_6, type:text %}
+                    <p class="left-gap">
+                        At the <a href="https://www.winecountryinn.com/">Wine Country Inn & Cottages</a>, guests wake up to <a href="https://www.winecountryinn.com/gallery/" title="Wine Country Inn photos">stunning views</a> of the neighboring Duckhorn Vineyards with an authentic country breakfast before setting out to <a href="https://www.winecountryinn.com/attractions/" title="Napa Valley">explore the Napa Valley</a>. Using the Wine Country Inn & Cottages as a starting point, travelers can tour the region’s notable <a href="https://www.winecountryinn.com/wineries/" title="Napa Valley wineries">wineries</a> and charming towns, as well as dine at its acclaimed <a href="https://www.winecountryinn.com/dining/" title="restaurants">Michelin-starred restaurants</a> and down-home roadside eateries. 
+                    </p>
+                    {% endregionblock %}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <section class="rooms-slider">
-	<div class="rooms-container">
-		{% include rooms-slider.html %}
-	</div>
+    <div class="rooms-container">
+        {% include rooms-slider.html %}
+    </div>
 </section>
-
 <section class="bottom-bg bg-center-center bg-cover bg-no-repeat" style="background-image: url(/assets/images/about/about-bottom-bg.jpg);">
-	<div class="bottom-container">
-		<div class="bottom-row">
-			<div class="bottom-img">
-				<img src="/assets/images/about/attractions.jpg" alt="Attractions" />
-			</div>
-			<div class="bottom-text">
-				<div class="left-gap">					
-					<h2 class="p-b-50">
-						 The <span class="italic"> Authentic Napa Valley </span> Experience
-					</h2>
-					<p class="left-line p-b-80">
-						Whether it’s a few minutes from the hotel or short drive down a wine country road, guests will find plenty of authentic <a href="https://www.winecountryinn.com/attractions/" title="things to do in Napa Valley">Napa Valley experiences</a> nearby the Wine Country Inn. From wine-tastings and vineyard tours, to rides on the Napa Valley Wine Train and meals served by James Beard Award-winning chefs, a trip to wine country couldn’t be more palatable.
-					</p>
-					<a href="/attractions/" class="theme-btn view-attr text-center" title="View Attractions"> View Attractions <i class="fa fa-angle-right"></i></a>
-					<!-- <a href="#" class="theme-btn transparent-dark text-center"> vacation Guide <i class="fa fa-angle-right"></i></a> -->
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="bottom-container">
+        <div class="bottom-row">
+            <div class="bottom-img">
+            	{% regionblock about_img_1, type:image %}
+                <img src="/assets/images/about/attractions.jpg" alt="Attractions" />
+                {% endregionblock %}
+            </div>
+            <div class="bottom-text">
+                <div class="left-gap">
+                    {% regionblock about_header_5, type:header %}
+                    <h2 class="p-b-50">
+                        The <span class="italic"> Authentic Napa Valley </span> Experience
+                    </h2>
+                    {% endregionblock %}
+                    {% regionblock about_text_7, type:text %}
+                    <p class="left-line p-b-80">
+                        Whether it’s a few minutes from the hotel or short drive down a wine country road, guests will find plenty of authentic <a href="https://www.winecountryinn.com/attractions/" title="things to do in Napa Valley">Napa Valley experiences</a> nearby the Wine Country Inn. From wine-tastings and vineyard tours, to rides on the Napa Valley Wine Train and meals served by James Beard Award-winning chefs, a trip to wine country couldn’t be more palatable.
+                    </p>
+                    {% endregionblock %}
+                    {% regionblock about_text_8, type:text %}
+                    <a href="/attractions/" class="theme-btn view-attr text-center" title="View Attractions"> View Attractions <i class="fa fa-angle-right"></i></a>
+                    {% endregionblock %}
+                    <!-- <a href="#" class="theme-btn transparent-dark text-center"> vacation Guide <i class="fa fa-angle-right"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <!-- Sojern Tag v6_js, Pixel Version: 1 -->
 <script>
-  (function () {
+    (function () {
+      
+      var params = {};
     
-    var params = {};
-
-    /* Please do not modify the below code. */
-    var cid = [];
-    var paramsArr = [];
-    var cidParams = [];
-    var pl = document.createElement('script');
-    var defaultParams = {"vid":"hot"};
-    for(key in defaultParams) { params[key] = defaultParams[key]; };
-    for(key in cidParams) { cid.push(params[cidParams[key]]); };
-    params.cid = cid.join('|');
-    for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
-    pl.type = 'text/javascript';
-    pl.async = true;
-    pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
-  })();
+      /* Please do not modify the below code. */
+      var cid = [];
+      var paramsArr = [];
+      var cidParams = [];
+      var pl = document.createElement('script');
+      var defaultParams = {"vid":"hot"};
+      for(key in defaultParams) { params[key] = defaultParams[key]; };
+      for(key in cidParams) { cid.push(params[cidParams[key]]); };
+      params.cid = cid.join('|');
+      for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    })();
 </script>
 <!-- End Sojern Tag -->
