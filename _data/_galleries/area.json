@@ -1,7 +1,25 @@
 {
   "name": "Area",
   "photos": [
-
+    {
+      "name": "garden",
+      "file_name": "garden.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/garden.jpg",
+      "tags": "area",
+      "file_size": 254345,
+      "width": 1000,
+      "height": 667,
+      "description": "",
+      "date_added": "2018-02-15-050005",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/large_garden.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/medium_garden.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/small_garden.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/xsmall_garden.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/thumb_garden.jpg",
+      "git_file_name": "_assets/image_data/garden.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-050005/garden.jpg"
+    }
   ],
   "description": ""
 }
