@@ -8,31 +8,19 @@ meta_description: A sophisticated luxury Napa Valley Bed and Breakfast in St. He
 	<div class="container-fluid no-padding">
 		<div data-ride="carousel" class="carousel slide" id="homePageMainSlider">
 		    <div role="listbox" class="carousel-inner">
-		        <div class="carousel-item active bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-1.jpg');">
+
+		    	{% assign sliders = site.data._models.home-page-slider | sortby:sort_order %}
+
+				{% for slider in sliders %}
+
+		        <div class="carousel-item {% if forloop.index == 1 %} active {% endif %} bg-center-center bg-norepeat bg-cover" style="background-image: url({{slider.image.url_large}});">
 		            <div class="carousel-caption">
-		                <h2>The Napa Valley <span class="italic"> Retreat </span> </h2>
+		                {{slider.caption}}
 		            </div>
 		        </div>
-		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-2.jpg');">
-		            <div class="carousel-caption">
-		               <h2>Unforgettable <span class="italic"> experiences </span> </h2>
-		            </div>
-		        </div>
-		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-5.jpg');">
-		            <div class="carousel-caption">
-		                <h2>Pet Friendly<span class="italic"> Accommodations </span> </h2>
-		            </div>
-		        </div>
-		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-3.jpg');">
-		            <div class="carousel-caption">
-		                <h2>Boutique <span class="italic"> Comfort </span> </h2>
-		            </div>
-		        </div>		        
-		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-4.jpg');">
-		            <div class="carousel-caption">
-		                <h2>Culinary <span class="italic"> Adventures </span></h2>
-		            </div>
-		        </div>		        
+
+		        {% endfor %}
+		        	        
 		    </div>
 		    <div class="carousel-arrows">
 		    	<a data-slide="prev"  data-target="#homePageMainSlider" class="bg-center-center bg-norepeat left-arrow" title="Previous Slide" name="Previous Slide">
