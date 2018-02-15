@@ -57,6 +57,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044748/thumb_bedroom-with-tv.jpg",
       "git_file_name": "_assets/image_data/bedroom-with-tv.json",
       "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044748/bedroom-with-tv.jpg"
+    },
+    {
+      "name": "bedroom-with-lamp",
+      "file_name": "bedroom-with-lamp.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/bedroom-with-lamp.jpg",
+      "tags": "accommodations",
+      "file_size": 137040,
+      "width": 1000,
+      "height": 667,
+      "description": "",
+      "date_added": "2018-02-15-044745",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/large_bedroom-with-lamp.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/medium_bedroom-with-lamp.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/small_bedroom-with-lamp.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/xsmall_bedroom-with-lamp.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/thumb_bedroom-with-lamp.jpg",
+      "git_file_name": "_assets/image_data/bedroom-with-lamp.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-044745/bedroom-with-lamp.jpg"
     }
   ],
   "description": ""
