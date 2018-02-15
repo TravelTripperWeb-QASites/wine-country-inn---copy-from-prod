@@ -5,12 +5,15 @@ meta_description: "Wine Country Inn is a beautiful Napa Valley hotel with vineya
 permalink: /amenities/complimentary-wine-country-breakfast/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/amenities/amenities1.jpg);">
- 	<h1>Complimentary wine country breakfast</h1>
+ 	<h1>{% regionblock complimentary_wine_header_1, type:header %}Complimentary wine country breakfast{% endregionblock %}</h1>
 </section>
 
 <section class="amenities-container no-padding">
     <div class="left-line">
+        {% regionblock complimentary_wine_header_2, type:header %}
         <h4>A Gourmet Napa Valley Inn Breakfast</h4>
+        {% endregionblock %}
+        {% regionblock complimentary_wine_text_1, type:text %}
         <p>Every morning enjoy a sumptuous complimentary Wine Country breakfast in the Winery House of the <a href="https://www.winecountryinn.com/">Wine Country Inn &amp; Cottages</a>. Expect to be spoiled by delicious breakfast dishes in a bountiful buffet format. There is a daily assortment of fresh fruit, juices, eggs, cereals, breads, cheeses, and other local delicacies to nourish a busy day in Napa Valley wine country.</p>
         <p>Breakfast is served daily at the Wine Country Inn &amp; Cottages in the Winery House from 7:30 a.m. to 10:30 a.m. Enjoy a fresh home cooked meal upon waking to the beautiful vineyard views in Napa Valley. The buffet includes egg dishes, sliced meats and cheeses, hot and cold cereals, a variety of breads, and fresh fruits. Arrangements for gluten-free items are available for guests with food allergies.</p>
         <h4>Sample Breakfast Selection</h4>
@@ -24,18 +27,8 @@ permalink: /amenities/complimentary-wine-country-breakfast/
             <li>Sliced meats and cheeses</li>
             <li>Bacon and sausages</li>
         </ul>
+        {% endregionblock %}
     </div>
 </section>
 
-
-
-<section class="common-banner" style="background-image: url(/assets/images/banner-plenty.jpg);">
-	
-	<div class="banner-content">
-		<h4>Unforgettable Experiences</h4>
-		<div class="ita_large_text left-line">From lively girls’ weekends to relaxing retreats, memories are made at the Wine Country Inn & Cottages</div>
-		<a href="/events/" target="_blank" class="theme-btn" target="_blank" title="Groups & Events">Groups & Events<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-
-	</div>
-
-</section>
+{% include unforgettable-experiences.html %}

@@ -5,7 +5,7 @@ meta_description: "Enjoy a stunning visual online tour of the Wine Country Inn a
 permalink: /gallery/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/gallery/gallery-banner.jpg);">
- 	<h1>Photo Gallery</h1>
+ 	<h1>{% regionblock gallery_heading_1, type:header %} Photo Gallery {% endregionblock %} </h1>
 </section>
 {% assign categories = site.data._galleries %}
 <section>
@@ -46,9 +46,16 @@ permalink: /gallery/
 
 <section class="common-banner" style="background-image: url(/assets/images/gallery/comfort.jpg);">
     <div class="banner-content">
+        {% regionblock gallery_heading_2, type:header %}
         <h4> Escape to <span class="italic"> wine country </span> </h4>
-        <div class="ita_large_text left-line">This authentic Napa Valley boutique inn is perfect for a romantic getaway.</div>
+        {% endregionblock %}
+        <div class="ita_large_text left-line">
+        {% regionblock gallery_text_1, type:text %}
+        This authentic Napa Valley boutique inn is perfect for a romantic getaway.</div>
+        {% endregionblock %}
+        {% regionblock gallery_text_2, type:text %}
         <a href="https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513" target="_blank" class="theme-btn" target="_blank" title="Book Your Stay">Book Your Stay<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+        {% endregionblock %}
     </div>
 </section>
 
