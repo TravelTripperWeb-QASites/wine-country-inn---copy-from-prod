@@ -5,14 +5,18 @@ meta_description: "The Wine Country Inn at Napa Valley, St Helena is the perfect
 permalink: /rfp/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/contact/contact-banner.jpg);">
- 	<h1>Request For Proposal</h1>
+ 	<h1>{% regionblock rfp_header_1, type:header %}Request For Proposal{% endregionblock %}</h1>
 </section>
 
 <section class="contact-page">
 	<div class="contact-fluid">
 		<div class="contact-form-container rfp-container">
+			{% regionblock rfp_header_2, type:header %}
 			<h3 class="m-t-20 m-b-5">Contact Information</h3>
+			{% endregionblock %}
+			{% regionblock rfp_text_1, type:header %}
 			<p class="m-b-20">Required fields are marked *</p>
+			{% endregionblock %}
 			<form class="contact-form" action="https://submit.jotform.me/submit/72404842128453/" method="post" name="form_72404842128453" id="72404842128453" accept-charset="utf-8">
 				<input type="hidden" name="formID" value="72404842128453" />
 				<div class="rfp-row">

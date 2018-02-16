@@ -5,125 +5,135 @@ meta_description: "You will find the Wine Country Inn at 1152 Lodi Lane, St Hele
 permalink: /contact/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/contact/contact-banner.jpg);">
- 	<h1>Contact Us</h1>
+    <h1>{% regionblock contact_header_1, type:header %}Contact Us{% endregionblock %}</h1>
 </section>
-
 <section class="contact-page">
-	<div class="contact-container-main">
-		<div class="left-gap">			
-			<div class="contact-container">
-				<div class="contact-details">
-					<div class="contact-row">
-						<div class="address">
-							<h2>Wine Country Inn</h2>
-							<ul class="left-line">
-								<li> Email: <a href="mailto:romance@winecountryinn.com" title="romance@winecountryinn.com"> <span>romance@winecountryinn.com</span> </a> </li>
-								<li> Phone: <a href="tel:(707) 963-7077" title="(707) 963-7077"> <span> (707) 963-7077 </span> </a> </li>
-								<li> Fax: <span> (707) 963-9018 </span> </li>
-								<li> Toll-free: <a href="tel:(888) 465-4608" title="(888) 465-4608"> <span> (888) 465-4608 </span> </a> </li>
-							</ul>
-							<a href="https://www.google.com/maps/place/Wine+Country+Inn/@38.5261732,-122.496957,17z/data=!3m1!4b1!4m5!3m4!1s0x80845af52a16f105:0x23ed098bfa86aabe!8m2!3d38.526169!4d-122.494763" target="_blank">
-								<ul class="left-line">
-									<li><span>Wine Country Inn</span></li>
-									<li><span>1152 Lodi Lane</span></li>
-									<li><span>St. Helena, CA 94574</span></li>
-									<li><span>United States</span></li>
-								</ul>
-							</a>
-						</div>						
-						<div class="map">
-						<a href="https://www.google.com/maps/place/Wine+Country+Inn/@38.5261732,-122.496957,17z/data=!3m1!4b1!4m5!3m4!1s0x80845af52a16f105:0x23ed098bfa86aabe!8m2!3d38.526169!4d-122.494763" target="_blank">
-							<img class="map-img" src="/assets/images/contact/map.jpg" alt="Wine County Inn Map" />
-						</a>
-						</div>					
-					</div>
-				</div>
-			</div>
-			<div class="contact-form-container">
-				<h3>Contact Us</h3>
-				<p class="required"> <i> Required fields are marked * </i> </p>
-				<form class="contact-form" action="https://submit.jotform.me/submit/72403881728461/" method="post" name="form_72403881728461" id="72403881728461" accept-charset="utf-8">
-					<input type="hidden" name="formID" value="72403881728461" />
-					<div class="form-row top">
-						<div class="form-section">
-							<div class="form-group">     
-	        					<input type="text" class="form-control" placeholder="Name *" id="input_3" name="q3_name" aria-label="Name" required />
-	        				</div>	
-	        				<div class="form-group">     
-	        					<input type="email" class="form-control" placeholder="Email *" id="input_12" name="q12_email" aria-label="Email" required />
-	        				</div>
-	        				<div class="form-group">     
-	        					<input type="text" class="form-control" placeholder="Phone number *" id="input_9" name="q9_phoneNumber" aria-label="Phone Number" required />
-	        				</div>
-						</div>
-						<div class="form-section">
-							<div class="form-group">     
-	        					<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control date-field" placeholder="Arrival date" id="input_8" name="q8_arrivalDate"  aria-label="Arrival Date" />
-	        				</div>	
-	        				<div class="form-group">     
-	        					<input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control date-field" placeholder="Departure date" id="input_7" name="q7_departureDate" aria-label="Departure Date" />
-	        				</div>
-	        				<div class="form-group">     
-	        					<div class="guests">
-	        						<div class="rooms-select">
-	        							<input type="number" min="0" placeholder="1 Room" id="input_6" name="q6_noOf" aria-label="No. of Rooms" />
-	        						</div>
-	        						<div class="adult-select">
-	        							<input type="number" min="0" placeholder="0 Adult" id="input_4" name="q4_noOf4" aria-label="No. of Adults" />
-	        						</div>
-	        						<div class="children-select">
-	        							<input type="number" min="0" placeholder="0 Children" id="input_5" name="q5_noOf5" aria-label="No. of Children" />
-	        						</div>
-	        					</div>
-	        				</div>
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="message-sec">
-							<div class="form-group">
-								<textarea name="Message" title="Message" class="form-control message" placeholder="Message"></textarea>
-							</div>
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="submit-sec">
-							<button href="#" title="Submit" class="theme-btn transparent-dark">Submit <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="common-banner" style="background-image: url(/assets/images/contact/go-around.jpg);">
-    <div class="banner-content contact-page">
-    	<h4> Unforgettable  <span class="italic"> Experiences </span> </h4>
-        <div class="ita_large_text left-line">From lively girls’ weekends to relaxing retreats, memories are made at the Wine Country Inn & Cottages</div>
-        <a href="/groups/" target="_blank" class="theme-btn" target="_blank" title="Group Bookings">Groups & Events<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    <div class="contact-container-main">
+        <div class="left-gap">
+            <div class="contact-container">
+                <div class="contact-details">
+                    <div class="contact-row">
+                        <div class="address">
+                            {% regionblock contact_header_2, type:header %}
+                            <h2>Wine Country Inn</h2>
+                            {% endregionblock %}
+                            {% regionblock contact_text_1, type:text %}
+                            <ul class="left-line">
+                                <li> Email: <a href="mailto:romance@winecountryinn.com" title="romance@winecountryinn.com"> <span>romance@winecountryinn.com</span> </a> </li>
+                                <li> Phone: <a href="tel:(707) 963-7077" title="(707) 963-7077"> <span> (707) 963-7077 </span> </a> </li>
+                                <li> Fax: <span> (707) 963-9018 </span> </li>
+                                <li> Toll-free: <a href="tel:(888) 465-4608" title="(888) 465-4608"> <span> (888) 465-4608 </span> </a> </li>
+                            </ul>
+                            {% endregionblock %}
+                            {% regionblock contact_text_2, type:text %}
+                            <a href="https://www.google.com/maps/place/Wine+Country+Inn/@38.5261732,-122.496957,17z/data=!3m1!4b1!4m5!3m4!1s0x80845af52a16f105:0x23ed098bfa86aabe!8m2!3d38.526169!4d-122.494763" target="_blank">
+                                <ul class="left-line">
+                                    <li><span>Wine Country Inn</span></li>
+                                    <li><span>1152 Lodi Lane</span></li>
+                                    <li><span>St. Helena, CA 94574</span></li>
+                                    <li><span>United States</span></li>
+                                </ul>
+                            </a>
+                            {% endregionblock %}
+                        </div>
+                        <div class="map">
+                            <a href="https://www.google.com/maps/place/Wine+Country+Inn/@38.5261732,-122.496957,17z/data=!3m1!4b1!4m5!3m4!1s0x80845af52a16f105:0x23ed098bfa86aabe!8m2!3d38.526169!4d-122.494763" target="_blank">
+                            <img class="map-img" src="/assets/images/contact/map.jpg" alt="Wine County Inn Map" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                {% regionblock contact_header_3, type:header %}
+                <h3>Contact Us</h3>
+                {% endregionblock %}
+                {% regionblock contact_text_3, type:text %}
+                <p class="required"> <i> Required fields are marked * </i> </p>
+                {% endregionblock %}
+                <form class="contact-form" action="https://submit.jotform.me/submit/72403881728461/" method="post" name="form_72403881728461" id="72403881728461" accept-charset="utf-8">
+                    <input type="hidden" name="formID" value="72403881728461" />
+                    <div class="form-row top">
+                        <div class="form-section">
+                            <div class="form-group">     
+                                <input type="text" class="form-control" placeholder="Name *" id="input_3" name="q3_name" aria-label="Name" required />
+                            </div>
+                            <div class="form-group">     
+                                <input type="email" class="form-control" placeholder="Email *" id="input_12" name="q12_email" aria-label="Email" required />
+                            </div>
+                            <div class="form-group">     
+                                <input type="text" class="form-control" placeholder="Phone number *" id="input_9" name="q9_phoneNumber" aria-label="Phone Number" required />
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <div class="form-group">     
+                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control date-field" placeholder="Arrival date" id="input_8" name="q8_arrivalDate"  aria-label="Arrival Date" />
+                            </div>
+                            <div class="form-group">     
+                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control date-field" placeholder="Departure date" id="input_7" name="q7_departureDate" aria-label="Departure Date" />
+                            </div>
+                            <div class="form-group">
+                                <div class="guests">
+                                    <div class="rooms-select">
+                                        <input type="number" min="0" placeholder="1 Room" id="input_6" name="q6_noOf" aria-label="No. of Rooms" />
+                                    </div>
+                                    <div class="adult-select">
+                                        <input type="number" min="0" placeholder="0 Adult" id="input_4" name="q4_noOf4" aria-label="No. of Adults" />
+                                    </div>
+                                    <div class="children-select">
+                                        <input type="number" min="0" placeholder="0 Children" id="input_5" name="q5_noOf5" aria-label="No. of Children" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="message-sec">
+                            <div class="form-group">
+                                <textarea name="Message" title="Message" class="form-control message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="submit-sec">
+                            <button href="#" title="Submit" class="theme-btn transparent-dark">Submit <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
-
+<section class="common-banner" style="background-image: url(/assets/images/contact/go-around.jpg);">
+    <div class="banner-content contact-page">
+        {% regionblock contact_header_4, type:header %}
+        <h4> Unforgettable  <span class="italic"> Experiences </span> </h4>
+        {% endregionblock %}
+        <div class="ita_large_text left-line">{% regionblock contact_text_4, type:text %}From lively girls’ weekends to relaxing retreats, memories are made at the Wine Country Inn & Cottages{% endregionblock %}</div>
+        {% regionblock contact_text_5, type:text %}
+        <a href="/groups/" target="_blank" class="theme-btn" target="_blank" title="Group Bookings">Groups & Events<i class="fa  fa-angle-right" aria-hidden="true"></i></a>{% endregionblock %}
+    </div>
+</section>
 <!-- Sojern Tag v6_js, Pixel Version: 1 -->
 <script>
-  (function () {
+    (function () {
+      
+      var params = {};
     
-    var params = {};
-
-    /* Please do not modify the below code. */
-    var cid = [];
-    var paramsArr = [];
-    var cidParams = [];
-    var pl = document.createElement('script');
-    var defaultParams = {"vid":"hot"};
-    for(key in defaultParams) { params[key] = defaultParams[key]; };
-    for(key in cidParams) { cid.push(params[cidParams[key]]); };
-    params.cid = cid.join('|');
-    for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
-    pl.type = 'text/javascript';
-    pl.async = true;
-    pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
-  })();
+      /* Please do not modify the below code. */
+      var cid = [];
+      var paramsArr = [];
+      var cidParams = [];
+      var pl = document.createElement('script');
+      var defaultParams = {"vid":"hot"};
+      for(key in defaultParams) { params[key] = defaultParams[key]; };
+      for(key in cidParams) { cid.push(params[cidParams[key]]); };
+      params.cid = cid.join('|');
+      for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    })();
 </script>
 <!-- End Sojern Tag -->

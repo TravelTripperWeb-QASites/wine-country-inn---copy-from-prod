@@ -5,25 +5,20 @@ meta_description: "Wine Country Inn is a beautiful Napa Valley hotel with vineya
 permalink: /amenities/heated-swimming-pool-and-spa/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/amenities/amenities2.jpg);">
- 	<h1>Heated swimming pool & spa</h1>
+ 	<h1>{% regionblock swimming_pool_header_1, type:header %}Heated swimming pool & spa{% endregionblock %}</h1>
 </section>
 
 <section class="amenities-container no-padding">
     <div class="left-line">
+    	{% regionblock swimming_pool_header_2, type:header %}
         <h4>Relax at our Luxury Boutique Hotel Poolside in St. Helena</h4>
+        {% endregionblock %}
+        {% regionblock swimming_pool_text_1, type:text %}
         <p>If you’re in search of a Napa Valley hotel with pools, our <a href="https://www.winecountryinn.com/" title="Wine Country Inn">luxury hotel</a> features a beautiful full-size rectangular pool with large areas for lounging in comfortable pool chaises and chairs. There is also comfort and relaxation to be found in the bubbles of the adjoining whirlpool bath. The Wine Country Inn & Cottages is one of the only luxury hotels with a pool in St Helena surrounded by <a href="https://www.winecountryinn.com/gallery/">beautiful picturesque views</a> of cascading wine country vineyards.</p>
         <p>For the best relaxation, lounge chairs and chaises are available at the pool for sunbathing, reading, and poolside naps. Our Napa Valley hotel pool in St. Helena provides the ultimate relaxation you are looking for after a long day of wine tasting in wine country. Enjoy a refreshing dip in the pool or the relaxing hot tub is an even better way to enjoy the beautiful expansive views that surround the outdoor Wine Country Inn & Cottages swimming pool oasis. Literally adjoined to a Cabernet vineyard, this is a rare experience to swim or soak amongst the vineyards, while enjoying staggering Napa Valley views.</p>
+        {% endregionblock %}
     </div>
 
 </section>
 
-<section class="common-banner" style="background-image: url(/assets/images/banner-plenty.jpg);">
-	
-	<div class="banner-content">
-		<h4>Unforgettable Experiences</h4>
-		<div class="ita_large_text left-line">From lively girls’ weekends to relaxing retreats, memories are made at the Wine Country Inn & Cottages</div>
-		<a href="/events/" target="_blank" class="theme-btn" target="_blank" title="Groups & Events">Groups & Events<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-
-	</div>
-
-</section>
+{% include unforgettable-experiences.html %}

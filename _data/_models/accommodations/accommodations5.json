@@ -2,13 +2,13 @@
   "title": "Garden Cottage King",
   "seo_title": "Cottages in Napa Valley | Garden Cottage King",
   "order": "05",
-  "nightprice": "$404",
+  "nightprice": "$900",
   "url_friendly_name": "garden-cottage-king",
   "seo_description": "The 800 square foot residential style garden cottages each feature large king beds made even more comfortable with the highest quality linens, as well as large bathrooms with soaking tubs and showers.",
   "short_description": "The 800 square foot residential style garden cottages each feature large king beds made even more comfortable with the highest quality linens, as well as large bathrooms with soaking tubs and showers. Cuddle up by the fireplace or sit on the outdoor patio with an interior view of the landscaped garden.",
-  "long_description": "<p>The 800 square foot residential style cottages each feature large king sized beds made even more comfortable with the highest quality bedding, as well as large bathrooms with soaking tubs and showers.</p>",
+  "long_description": "<p>The 800 square foot residential style cottages each feature large king sized beds made even more comfortable with the highest quality bedding, as well as large bathrooms with soaking tubs and showers.&nbsp;<span style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 10.5pt; line-height: 120%; font-family: Verdana, sans-serif;\">After a busy day of Napa Valley wine tasting or culinary arts these spacious rooms, offer an expansive outdoor patio for a quiet retreat of relaxation and rejuvenation before the next day&rsquo;s Napa Valley adventures</span>.</p>\n<p class=\"MsoNormal\">&nbsp;</p>\n<p>&nbsp;</p>",
   "thumb_image": {
-    "alt": "cotton",
+    "alt": "Garden Cottage",
     "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-034131/cotton-king.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-034131/cotton-king.jpg",
     "file_type": "image/jpeg",
@@ -39,7 +39,7 @@
     "width": 1000,
     "height": 400,
     "file_size": 109070,
-    "alt": "cotton",
+    "alt": "Garden Cottage",
     "caption": "",
     "description": ""
   },
@@ -57,7 +57,7 @@
     "width": 1000,
     "height": 400,
     "file_size": 109070,
-    "alt": "cotton",
+    "alt": "Garden Cottage",
     "caption": "",
     "description": ""
   },
@@ -75,7 +75,7 @@
     "width": 1000,
     "height": 400,
     "file_size": 109070,
-    "alt": "cotton",
+    "alt": "Garden Cottage",
     "caption": "",
     "description": ""
   },
@@ -93,7 +93,7 @@
     "width": 1000,
     "height": 400,
     "file_size": 109070,
-    "alt": "cotton",
+    "alt": "Garden Cottage",
     "caption": "",
     "description": ""
   },
@@ -111,9 +111,11 @@
     "width": 1000,
     "height": 400,
     "file_size": 109070,
-    "alt": "cotton",
+    "alt": "Garden Cottage",
     "caption": "",
     "description": ""
   },
-  "booking_url": "https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513"
+  "booking_url": "https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513",
+  "amenities": "<ul>\n<li>Wine Country Buffet Breakfast served each morning in the Winery House from 7:30 am - 10:30 am</li>\n<li>Wine Reception Friday and Saturday evenings from 5:00 pm - 6:00 pm, hosted by a local vintners</li>\n<li>Split of wine and assorted beverages in your guest room upon arrival</li>\n<li>Heated swimming pool and Jacuzzi open from 8:00 am - 10:00 pm</li>\n<li>In-room spa services available for purchase</li>\n<li>Concierge services</li>\n<li>Daily parking</li>\n<li>No resort fee</li>\n</ul>",
+  "features": "<ul>\n<li>Pet Friendly Rooms Available</li>\n<li>King sized bed</li>\n<li>All Cottages have a fireplace</li>\n<li>Hypo-allergenic bedding</li>\n<li>High-speed Wi-Fi Internet</li>\n<li>Flat screen television</li>\n<li>iPod docking capabilities</li>\n<li>Oliva Farmacia bath products</li>\n<li>Bathrobes &amp; slippers</li>\n<li>Iron &amp; ironing board</li>\n<li>Hairdryer</li>\n<li>Keurig coffee/tea machine</li>\n<li>Expansive outdoor patio with interior view</li>\n<li>Daily housekeeping service</li>\n</ul>"
 }

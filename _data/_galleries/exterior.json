@@ -1,0 +1,44 @@
+{
+  "name": "Exterior",
+  "photos": [
+    {
+      "name": "outdoor-night",
+      "file_name": "outdoor-night.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045625/outdoor-night.jpg",
+      "tags": "exterior",
+      "file_size": 279525,
+      "width": 2000,
+      "height": 1333,
+      "description": "",
+      "date_added": "2018-02-15-045625",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045625/large_outdoor-night.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045625/medium_outdoor-night.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045625/small_outdoor-night.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045625/xsmall_outdoor-night.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045625/thumb_outdoor-night.jpg",
+      "git_file_name": "_assets/image_data/outdoor-night.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045625/outdoor-night.jpg"
+    },
+    {
+      "name": "outdoor",
+      "file_name": "outdoor.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045623/outdoor.jpg",
+      "tags": "exterior",
+      "file_size": 268879,
+      "width": 1000,
+      "height": 667,
+      "description": "",
+      "date_added": "2018-02-15-045623",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045623/large_outdoor.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045623/medium_outdoor.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045623/small_outdoor.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045623/xsmall_outdoor.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045623/thumb_outdoor.jpg",
+      "git_file_name": "_assets/image_data/outdoor.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_12326/media/2018-02-15-045623/outdoor.jpg"
+    }
+  ],
+  "description": ""
+}

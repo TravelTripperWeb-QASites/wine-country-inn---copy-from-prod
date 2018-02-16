@@ -5,167 +5,128 @@ meta_description: "For mouth-watering experiences highly recommended by the Wine
 permalink: /dining/
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-dining.jpg);">
- 	<h1>Dining</h1>
+    <h1>{% regionblock dining_header_1, type:header %}Dining{% endregionblock %}</h1>
 </section>
-
 <section class="full-text-section">
-	<div class="text-section-container">
-		<div class="left-gap">			
-			<div class="text-row">
-				<div class="text-col">
-					<h2>Experiences to please <span class="italic"> every palate </span> </h2>
-				</div>
-				<div class="text-col">
-					
-				</div>
-			</div>
-			<div class="text-row">
-				<div class="text-col">
-					<p class="semi-ital left-line">
-						Food and wine are a quintessential part of the Napa Valley experience. From family wineries and comfort foods at roadside stands to acclaimed tasting menus eloquently paired with California wines, the Napa Valley knows how to wine and dine. And the staff at Wine Country Inn & Cottages is eager to make your experience special and can assist with reservations and recommendations.
-					</p>
-
-					<!-- <a href="#" class="theme-btn">enquire now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-					<a href="#" class="theme-btn transparent-dark">vacation guide<i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
-
-				</div>
-				<div class="text-col">
-
-
-					<p class="left-gap"> Set in an actual vineyard, just five minutes north of the St. Helena town center, the <a href="https://www.winecountryinn.com/">Wine Country Inn & Cottages</a> is among some of the Napa Valley’s best <a href="https://www.winecountryinn.com/wineries/" title="Napa Valley winery">wineries</a> and most renowned restaurants. From tastings at Freemark Abbey, Duckhorn Winery, Hall Winery, and Markham Winery to inventive cuisine Michelin-starred restaurants or stimulating cooking classes at The Culinary Institute of America, guests of the Wine Country Inn & Cottages have numerous vinicultural and gastronomic experiences at their fingertips. </p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="text-section-container">
+        <div class="left-gap">
+            <div class="text-row">
+                <div class="text-col">
+                	{% regionblock dining_header_2, type:header %}
+                    <h2>Experiences to please <span class="italic"> every palate </span> </h2>
+                    {% endregionblock %}
+                </div>
+                <div class="text-col">
+                </div>
+            </div>
+            <div class="text-row">
+                <div class="text-col">
+                	{% regionblock dining_text_1, type:text %}
+                    <p class="semi-ital left-line">
+                        Food and wine are a quintessential part of the Napa Valley experience. From family wineries and comfort foods at roadside stands to acclaimed tasting menus eloquently paired with California wines, the Napa Valley knows how to wine and dine. And the staff at Wine Country Inn & Cottages is eager to make your experience special and can assist with reservations and recommendations.
+                    </p>
+                    {% endregionblock %}
+                    <!-- <a href="#" class="theme-btn">enquire now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <a href="#" class="theme-btn transparent-dark">vacation guide<i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+                </div>
+                <div class="text-col">
+                	{% regionblock dining_text_2, type:text %}
+                    <p class="left-gap"> Set in an actual vineyard, just five minutes north of the St. Helena town center, the <a href="https://www.winecountryinn.com/">Wine Country Inn & Cottages</a> is among some of the Napa Valley’s best <a href="https://www.winecountryinn.com/wineries/" title="Napa Valley winery">wineries</a> and most renowned restaurants. From tastings at Freemark Abbey, Duckhorn Winery, Hall Winery, and Markham Winery to inventive cuisine Michelin-starred restaurants or stimulating cooking classes at The Culinary Institute of America, guests of the Wine Country Inn & Cottages have numerous vinicultural and gastronomic experiences at their fingertips. </p>
+                    {% endregionblock %}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-                   
 <div class="map-wrap">
-
-<div class="dining-widget">
-<h4>choose a local dining area below:</h4>
-<ul class="nav nav-tabs" role="tablist">
-<a class="nav-link active" data-toggle="tab" onclick="filterMarkers('sthelena');" data-target="#tab1"  role="tab"><span>St helena & <br> ruthersford <br> restaurants<span></a>
-<a class="nav-link" onclick="filterMarkers('calistoga');" data-toggle="tab" data-target="#tab2" role="tab"><span>Calistoga <br>restaurants</span></a>
-<a class="nav-link"  onclick="filterMarkers('yountville');"  data-toggle="tab" data-target="#tab3" role="tab"><span>Yountville <br>restaurants</span></a>
-</ul>
-<!-- Tab panes -->
-<div class="tab-content">
-<div class="tab-pane active" id="tab1" role="tabpanel">
-<div class="content-container">
+    <div class="dining-widget">
+    	{% regionblock dining_header_3, type:header %}
+        <h4>choose a local dining area below:</h4>
+        {% endregionblock %}
+        {% regionblock dining_text_3, type:text %}
+        <ul class="nav nav-tabs" role="tablist">
+            <a class="nav-link active" data-toggle="tab" onclick="filterMarkers('sthelena');" data-target="#tab1"  role="tab"><span>St helena & <br> ruthersford <br> restaurants<span></a>
+            <a class="nav-link" onclick="filterMarkers('calistoga');" data-toggle="tab" data-target="#tab2" role="tab"><span>Calistoga <br>restaurants</span></a>
+            <a class="nav-link"  onclick="filterMarkers('yountville');"  data-toggle="tab" data-target="#tab3" role="tab"><span>Yountville <br>restaurants</span></a>
+        </ul>
+        {% endregionblock %}
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1" role="tabpanel">
+                <div class="content-container"></div>
+                {% regionblock dining_text_3, type:text %}
+                <p><a href="https://www.twobirdsonestonenapa.com/" target="_blank">Two Birds One Stone</a> ~ (707) 302-3777 Wine, cocktails & Japanese yakitori with a California flair offered in historic, rustic-chic digs.</p>
+                <p><a href="http://www.terrarestaurant.com/" target="_blank">Terra</a> ~ (707) 963-8931 Revered Michelin Star eatery features farm-to-table New American tasting menus in an elegant fieldstone farmhouse.</p>
+                <p><a href="http://www.therestaurantatmeadowood.com/" target="_blank">Restaurant at Meadowood</a> ~ (707) 967-1205 Meadowood resort's Michelin Star eatery offering custom tasting menus of fine Californian fare plus wine pairings.</p>
+                <p><a href="http://archetypenapa.com/" target="_blank">Archetype</a> ~ (707) 968-9200 Locally farmed American meals are the draw at this stylish neighborhood eatery with outdoor seating.</p>
+                <p><a href="http://www.aubergedusoleil.com/napa-dining/restaurant" target="_blank">Auberge du Soleil</a> ~ (707) 963-1211 Upscale fine dining restaurant with an exceptional view of the Napa Valley from both the bar and dining room. Great for lunch also. Located 5 miles South on Silverado Trail.</p>
+                <p><a href="http://www.cairdeanestate.com/Brasswood" target="_blank">Brasswood Bar + Kitchen</a> ~  (707) 302-5101 – A gathering place for locals and visitors alike serves farm to table wine country comfort food.</p>
+                <p><a href="http://cindysbackstreetkitchen.com/" target="_blank">Cindy’s Backstreet Kitchen</a> ~ (707) 963-1200 Fun, casual neighborhood cuisine created by one of Napa Valley’s most renowned restauranteurs, Cindy Pawlcyn. Mingle with locals out enjoying the Napa Valley lifestyle.</p>
+                <p><a href="http://www.yelp.com/biz/cook-st-helena-saint-helena-2" target="_blank">Cook</a> ~ (707) 963-7088 Great Italian style café in a casual atmosphere. Limited seating.</p>
+                <p><a href="http://www.ciarestaurantgroup.com/wine-spectator-greystone-restaurant/" target="_blank">The Culinary Institute of America at Greystone</a> ~ (707) 967-1100 – Casual dining with an exciting menu in the location of the nation’s finest culinary academy.</p>
+                <p><a href="http://www.longmeadowranch.com/?method=pages.showPage&amp;PageID=F1F5CA15-086D-56E4-884D-920F294C6C82&amp;originalMarketingURL=Farmstead/Restaurant" target="_blank">Farmstead at Long Meadow Ranch</a> ~ (707) 963-9181 Farm-to-table dining at its best! Great bar cocktails.</p>
+                <p><a href="http://www.goosegander.com/" target="_blank">Goose and Gander</a> – (707) 967-8779 – Farm to table gastropub offering craft cocktails &amp; wines galore in rustic environment with a patio &amp; basement bar.</p>
+                <p><a href="http://www.marketsthelena.com/" target="_blank">Market</a> ~ (707) 963-3799 Comfortable stonewalled dining room featuring interesting “comfort food” with a gourmet twist. A favorite with locals.</p>
+                <p><a href="http://www.meadowood.com/dining" target="_blank">Meadowood</a> ~ (707) 963-3646 or 800-458-8080. This elegant Michelin 3-Star dining room offers both prix fixe and a la carte options with a particular attention to wine pairing. This is the finest dining.</p>
+                <p><a href="http://www.terrarestaurant.com/" target="_blank">Press</a> ~ (707) 967-0550 Dressy a la carte steak house specializing in prime dry-aged beef, fresh fish and farm to table specialties.</p>
+                <p><a href="http://rutherfordgrill.com/" target="_blank">Rutherford Grill</a> ~ (707) 963-1792 Lively and fun grill that only reserves some of its tables, so it is good for walk-ins. Excellent outdoor bar and large tasty portions.</p>
+                <p><a href="http://gotts.com/" target="_blank">Gott’s Roadside</a> ~ (707) 963-3487 Fast food with gourmet selection and a great wine list.</p>
+                {% endregionblock %}
+                <!-- <p><a href="http://www.terrarestaurant.com/" target="_blank">Terra</a> ~ (707) 963-8931 French with Japanese influence. Housed in a 125 year-old stone building this is fine dining, but there is also a bar section with lighter and more causal fare.</p> -->
+            </div>
+            <div class="tab-pane" id="tab2" role="tabpanel">
+            	{% regionblock dining_text_4, type:text %}
+                <p><a href="http://www.allseasonsnapavalley.net/" target="_blank">All Seasons Bistro</a> ~ (707) 942-9111 Casual Country French food.</p>
+                <p><a href="http://www.busterssouthernbbq.com/home.html" target="_blank">Buster’s Southern Barbeque</a> ~ Good barbecue. Perfect for lunch and casual dinner.</p>
+                <p><a href="http://calistogainn.com/restaurant.html" target="_blank">Calistoga Inn</a> ~ (707) 942-4101 A brew-pub with nice seafood and a wide range of other offerings. Excellent outdoor dining. Casual.</p>
+                <p><a href="http://www.brannansgrill.com/" target="_blank">Brannan’s Grill</a> ~ (707) 942-2233 American Grill, great seafood dishes. Beautiful dining room. Casual.</p>
+                <p><a href="http://evangelinenapa.com/" target="_blank">Evangeline</a> ~ (707) 341-3074This casual restaurant menu features fresh, fun versions of southern favorites.</p>
+                <p><a href="http://samssocialclub.com/" target="_blank">Sam’s Social Club</a> ~ (707) 942-4969Sam’s Social Club is open to the public and serving Rustic American Cuisine for breakfast, lunch and dinner. Great bar. Great late evening scene.</p>
+                <p><a href="https://solage.aubergeresorts.com/dine/" target="_blank">Solbar</a> ~ (707) 226-0860 At this Michelin-starred Solbar the feature is farm-fresh, seasonal ingredients created into unique, flavorful and surprising dishes that reflect the best Napa Valley has to offer.</p>
+                {% endregionblock %}
+            </div>
+            <div class="tab-pane" id="tab3" role="tabpanel">
+            	{% regionblock dining_text_5, type:text %}
+                <p><a href="http://www.thomaskeller.com/adhoc" target="_blank">ad hoc</a> ~ (707) 944-2487 Thomas Keller of French Laundry fame opened this restaurant with a very unusual format. A 3-course dinner menu changes nightly.</p>
+                <p><a href="http://bistrojeanty.com/" target="_blank">Bistro Jeanty</a> ~ (707) 944-0103 This restaurant could just as easily sit in the French countryside with vineyards surrounding it.</p>
+                <p><a href="http://www.botteganapavalley.com/" target="_blank">Bottega</a> ~ (707) 945-1050 Celebrity Chef Chiarello presents hearty and tasty Italian food in a Napa Style.</p>
+                <p><a href="http://www.thomaskeller.com/bouchonyountville" target="_blank">Bouchon</a> ~ (707) 944-8037 This bistro by French Laundry’s Thomas Keller, features a very nice raw bar and French brasserie style food.</p>
+                <p><a href="http://www.brix.com/" target="_blank">Brix</a> ~ (707) 944-2749 Family style dining room and outdoor patio. Wonderful views of the nearby mountains.</p>
+                <p><a href="http://www.opentable.com/the-french-laundry" target="_blank">French Laundry</a> ~ (707) 944-2380 Michelin 3 star dining. Considered by some to be the best restaurant in the nation. Must call exactly two months in advance, starting at 10:00.</p>
+                <p><a href="http://www.hurleysrestaurant.com/" target="_blank">Hurley’s</a> ~ (707) 944-2345 Wine Country Mediterranean. Specializes in wild meats. Great bar scene. Open late.</p>
+                <p><a href="http://mustardsgrill.com/" target="_blank">Mustards</a> ~ (707) 944-2424 The restaurant that started the Napa Valley California cuisine scene. Great food. Casual dining.</p>
+                <p><a href="http://reddnapavalley.com/" target="_blank">REDD Napa</a> ~ (707) 944-8686 Elegant and contemporary, this sleek restaurant offers imaginative, fresh cuisine influenced by global cuisines.</p>
+                {% endregionblock %}
+            </div>
+        </div>
+    </div>
+    <div class="map-inner"  id="map-canvas"> </div>
 </div>
-
-<p><a href="https://www.twobirdsonestonenapa.com/" target="_blank">Two Birds One Stone</a> ~ (707) 302-3777 Wine, cocktails & Japanese yakitori with a California flair offered in historic, rustic-chic digs.</p>
-
-<p><a href="http://www.terrarestaurant.com/" target="_blank">Terra</a> ~ (707) 963-8931 Revered Michelin Star eatery features farm-to-table New American tasting menus in an elegant fieldstone farmhouse.</p>
-
-<p><a href="http://www.therestaurantatmeadowood.com/" target="_blank">Restaurant at Meadowood</a> ~ (707) 967-1205 Meadowood resort's Michelin Star eatery offering custom tasting menus of fine Californian fare plus wine pairings.</p>
-
-
-<p><a href="http://archetypenapa.com/" target="_blank">Archetype</a> ~ (707) 968-9200 Locally farmed American meals are the draw at this stylish neighborhood eatery with outdoor seating.</p>
-
-<p><a href="http://www.aubergedusoleil.com/napa-dining/restaurant" target="_blank">Auberge du Soleil</a> ~ (707) 963-1211 Upscale fine dining restaurant with an exceptional view of the Napa Valley from both the bar and dining room. Great for lunch also. Located 5 miles South on Silverado Trail.</p>
-
-<p><a href="http://www.cairdeanestate.com/Brasswood" target="_blank">Brasswood Bar + Kitchen</a> ~  (707) 302-5101 – A gathering place for locals and visitors alike serves farm to table wine country comfort food.</p>
-
-<p><a href="http://cindysbackstreetkitchen.com/" target="_blank">Cindy’s Backstreet Kitchen</a> ~ (707) 963-1200 Fun, casual neighborhood cuisine created by one of Napa Valley’s most renowned restauranteurs, Cindy Pawlcyn. Mingle with locals out enjoying the Napa Valley lifestyle.</p>
-
-<p><a href="http://www.yelp.com/biz/cook-st-helena-saint-helena-2" target="_blank">Cook</a> ~ (707) 963-7088 Great Italian style café in a casual atmosphere. Limited seating.</p>
-
-<p><a href="http://www.ciarestaurantgroup.com/wine-spectator-greystone-restaurant/" target="_blank">The Culinary Institute of America at Greystone</a> ~ (707) 967-1100 – Casual dining with an exciting menu in the location of the nation’s finest culinary academy.</p>
-
-<p><a href="http://www.longmeadowranch.com/?method=pages.showPage&amp;PageID=F1F5CA15-086D-56E4-884D-920F294C6C82&amp;originalMarketingURL=Farmstead/Restaurant" target="_blank">Farmstead at Long Meadow Ranch</a> ~ (707) 963-9181 Farm-to-table dining at its best! Great bar cocktails.</p>
-
-<p><a href="http://www.goosegander.com/" target="_blank">Goose and Gander</a> – (707) 967-8779 – Farm to table gastropub offering craft cocktails &amp; wines galore in rustic environment with a patio &amp; basement bar.</p>
-
-<p><a href="http://www.marketsthelena.com/" target="_blank">Market</a> ~ (707) 963-3799 Comfortable stonewalled dining room featuring interesting “comfort food” with a gourmet twist. A favorite with locals.</p>
-
-<p><a href="http://www.meadowood.com/dining" target="_blank">Meadowood</a> ~ (707) 963-3646 or 800-458-8080. This elegant Michelin 3-Star dining room offers both prix fixe and a la carte options with a particular attention to wine pairing. This is the finest dining.</p>
-
-<p><a href="http://www.terrarestaurant.com/" target="_blank">Press</a> ~ (707) 967-0550 Dressy a la carte steak house specializing in prime dry-aged beef, fresh fish and farm to table specialties.</p>
-
-<p><a href="http://rutherfordgrill.com/" target="_blank">Rutherford Grill</a> ~ (707) 963-1792 Lively and fun grill that only reserves some of its tables, so it is good for walk-ins. Excellent outdoor bar and large tasty portions.</p>
-
-<p><a href="http://gotts.com/" target="_blank">Gott’s Roadside</a> ~ (707) 963-3487 Fast food with gourmet selection and a great wine list.</p>
-
-<!-- <p><a href="http://www.terrarestaurant.com/" target="_blank">Terra</a> ~ (707) 963-8931 French with Japanese influence. Housed in a 125 year-old stone building this is fine dining, but there is also a bar section with lighter and more causal fare.</p> -->
-
-
-
-</div>
-<div class="tab-pane" id="tab2" role="tabpanel">
-	
-<p><a href="http://www.allseasonsnapavalley.net/" target="_blank">All Seasons Bistro</a> ~ (707) 942-9111 Casual Country French food.</p>
-
-<p><a href="http://www.busterssouthernbbq.com/home.html" target="_blank">Buster’s Southern Barbeque</a> ~ Good barbecue. Perfect for lunch and casual dinner.</p>
-
-<p><a href="http://calistogainn.com/restaurant.html" target="_blank">Calistoga Inn</a> ~ (707) 942-4101 A brew-pub with nice seafood and a wide range of other offerings. Excellent outdoor dining. Casual.</p>
-
-<p><a href="http://www.brannansgrill.com/" target="_blank">Brannan’s Grill</a> ~ (707) 942-2233 American Grill, great seafood dishes. Beautiful dining room. Casual.</p>
-
-<p><a href="http://evangelinenapa.com/" target="_blank">Evangeline</a> ~ (707) 341-3074This casual restaurant menu features fresh, fun versions of southern favorites.</p>
-
-<p><a href="http://samssocialclub.com/" target="_blank">Sam’s Social Club</a> ~ (707) 942-4969Sam’s Social Club is open to the public and serving Rustic American Cuisine for breakfast, lunch and dinner. Great bar. Great late evening scene.</p>
-
-<p><a href="https://solage.aubergeresorts.com/dine/" target="_blank">Solbar</a> ~ (707) 226-0860 At this Michelin-starred Solbar the feature is farm-fresh, seasonal ingredients created into unique, flavorful and surprising dishes that reflect the best Napa Valley has to offer.</p>
-
-
-</div>
-<div class="tab-pane" id="tab3" role="tabpanel"><p><a href="http://www.thomaskeller.com/adhoc" target="_blank">ad hoc</a> ~ (707) 944-2487 Thomas Keller of French Laundry fame opened this restaurant with a very unusual format. A 3-course dinner menu changes nightly.</p>
-
-<p><a href="http://bistrojeanty.com/" target="_blank">Bistro Jeanty</a> ~ (707) 944-0103 This restaurant could just as easily sit in the French countryside with vineyards surrounding it.</p>
-
-<p><a href="http://www.botteganapavalley.com/" target="_blank">Bottega</a> ~ (707) 945-1050 Celebrity Chef Chiarello presents hearty and tasty Italian food in a Napa Style.</p>
-
-<p><a href="http://www.thomaskeller.com/bouchonyountville" target="_blank">Bouchon</a> ~ (707) 944-8037 This bistro by French Laundry’s Thomas Keller, features a very nice raw bar and French brasserie style food.</p>
-
-<p><a href="http://www.brix.com/" target="_blank">Brix</a> ~ (707) 944-2749 Family style dining room and outdoor patio. Wonderful views of the nearby mountains.</p>
-
-<p><a href="http://www.opentable.com/the-french-laundry" target="_blank">French Laundry</a> ~ (707) 944-2380 Michelin 3 star dining. Considered by some to be the best restaurant in the nation. Must call exactly two months in advance, starting at 10:00.</p>
-
-<p><a href="http://www.hurleysrestaurant.com/" target="_blank">Hurley’s</a> ~ (707) 944-2345 Wine Country Mediterranean. Specializes in wild meats. Great bar scene. Open late.</p>
-
-<p><a href="http://mustardsgrill.com/" target="_blank">Mustards</a> ~ (707) 944-2424 The restaurant that started the Napa Valley California cuisine scene. Great food. Casual dining.</p>
-
-<p><a href="http://reddnapavalley.com/" target="_blank">REDD Napa</a> ~ (707) 944-8686 Elegant and contemporary, this sleek restaurant offers imaginative, fresh cuisine influenced by global cuisines.</p></div>
-
-</div>
-</div> 
-
-<div class="map-inner"  id="map-canvas"> 
-</div> 
-</div>
-
 <div class="mb-5">
-{% include special-offer-slider.html %}
+    {% include special-offer-slider.html %}
 </div>
-
-
 <!-- Sojern Tag v6_js, Pixel Version: 1 -->
 <script>
-  (function () {
+    (function () {
+      
+      var params = {};
     
-    var params = {};
-
-    /* Please do not modify the below code. */
-    var cid = [];
-    var paramsArr = [];
-    var cidParams = [];
-    var pl = document.createElement('script');
-    var defaultParams = {"vid":"hot"};
-    for(key in defaultParams) { params[key] = defaultParams[key]; };
-    for(key in cidParams) { cid.push(params[cidParams[key]]); };
-    params.cid = cid.join('|');
-    for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
-    pl.type = 'text/javascript';
-    pl.async = true;
-    pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
-  })();
+      /* Please do not modify the below code. */
+      var cid = [];
+      var paramsArr = [];
+      var cidParams = [];
+      var pl = document.createElement('script');
+      var defaultParams = {"vid":"hot"};
+      for(key in defaultParams) { params[key] = defaultParams[key]; };
+      for(key in cidParams) { cid.push(params[cidParams[key]]); };
+      params.cid = cid.join('|');
+      for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    })();
 </script>
 <!-- End Sojern Tag -->
-
-
-
-
 
 
