@@ -21,6 +21,8 @@ document.getElementById('fb-root').appendChild(e);
 
 $(document).ready(function(){
 
+
+
 	if (Cookies.get('popup') != 'showoffer') {
 	    $('#fire-popup').show();
 	    $('#fire-popup').modal();
@@ -28,7 +30,7 @@ $(document).ready(function(){
 	      expires: 1
 	    });
 	}
-
+     
 	$('.fb-share').click(function(e){ 
         e.preventDefault();
         FB.ui({
