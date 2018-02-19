@@ -1,6 +1,15 @@
 <meta charset="utf-8">
 {% include analytics.html %}
 {% include seo.html %}
+
+{% if page.meta_tags !="" %}
+ {% if page.url =='/blog/'%}
+   <meta name="robots" content="">
+ {% else %}
+   <meta name="robots" content="{{ page.meta_tags }}">
+ {%endif%}
+{% endif %}
+
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
