@@ -170,3 +170,24 @@
 
 
 
+.privacy{
+		ul{
+			li{
+				list-style-type: disc;
+				padding-left: 0px !important;
+				font-size: 0.9375rem;
+   			    line-height: 1.875rem;
+				&:after{
+					display: none !important;
+				}
+			}
+		}
+		a{
+			color: $black;
+			&:hover{
+				color:$primary-color;
+			}
+
+		}
+	
+}
