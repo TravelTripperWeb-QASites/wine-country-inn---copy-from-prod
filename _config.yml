@@ -1,15 +1,14 @@
 # Site Settings
-title                    : "Wine Country Inn"
-title_separator          : "|"
-name                     : "Wine Country Inn"
-description              : "Wine Country Inn"
-url                      : "https://www.winecountryinn.com" # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : https://github.com/TravelTripperWeb-Sites/wine-country-inn # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
+title: "Wine Country Inn"
+title_separator: "|"
+name: "Wine Country Inn"
+description: "Wine Country Inn"
+url: "https://www.winecountryinn.com" # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
+repository: TravelTripperWeb-Sites/wine-country-inn # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 
 # Language Settings
-default_lang             : 'en'
-languages                : ['en']
+default_lang: 'en'
+languages: ['en']
 
 # Reading Files
 include:
@@ -45,7 +44,7 @@ keep_files:
   - .git
   - assets
 rsync_copy:
-- _assets
+  - _assets
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -67,22 +66,23 @@ kramdown:
 
 # Sass/SCSS
 sass:
-    load_paths:
-        - _sass
-    style: compressed
+  load_paths:
+    - _sass
+  style: compressed
 
 # Outputting
 permalink: pretty
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-data_paginate: 
-    per_page: 5
-    data: 'blog'
-    path: 'blog/page:num/'
-    pagination_template: 'blog/index.html'
-    sort_field: 'date'
+data_paginate:
+  per_page: 5
+  data: 'blog'
+  path: 'blog/page:num/'
+  pagination_template: 'blog/index.html'
+  sort_field: 'date'
+  sort_reverse: true
 
-page_gen: # 
+page_gen: #
   - data: 'accommodations'
     template: 'accommodation-details'
     dir: 'accommodations'
