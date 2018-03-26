@@ -1,0 +1,39 @@
+/*Mobile Redirect Popover styling here*/
+
+.mobile-redirect-popover {
+    background: #fff;
+    height: 100vh;
+    .wrapper {
+        height:auto;
+        background: #fff;
+        text-align: center;
+        a{
+            &.theme-btn{
+                margin: 10px auto;
+            }
+        }
+       
+        h5 {
+            text-transform: uppercase;
+            color: #000;
+            font-family: $site_font;
+        }
+        h4 {
+            font-family: $site_font;
+            span {
+                color: #000;
+            }
+        }
+        img {
+            width: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+    .popmap {
+        height:60vh;
+        background: url('/assets/images/mobile-map.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
