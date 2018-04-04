@@ -33,7 +33,7 @@ permalink: /accommodations/
         <div class="accom-item-col no-padding {% cycle '', 'push-lg-7' %}">
             <div class="accom-item-text">
                 <span>0{{forloop.index }}</span>
-                <h4 class="m-b-20">{{accommodations.title }}</h4>
+                <h4 class="m-b-20"><a href="{{accommodations.url_friendly_name}}/"> {{accommodations.title }}</a></h4>
                 <!-- <h6>from {{accommodations.nightprice}} per night </h6> -->
                 <p>{{accommodations.short_description}}</p>
                 <div class="btns-group">

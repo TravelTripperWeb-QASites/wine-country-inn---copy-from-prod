@@ -98,6 +98,9 @@ h3 {
 h4 {
 
      @include text-formatting($headings_font, 2rem, normal, normal, .7px, none, $white);
+     a{
+      color:$white
+     }
 }
 
 h5 {
