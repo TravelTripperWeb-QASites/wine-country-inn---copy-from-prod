@@ -36,7 +36,7 @@ img{
 
 h1 {
     @include text-formatting($headings_font, 1.5rem, normal, normal, normal, none, $black);
-    
+
     @include media-breakpoint-up(sm) {
         font-size: 3rem;
         line-height: normal;
@@ -62,7 +62,7 @@ h2 {
 
     @include media-breakpoint-up(sm) {
         font-size: 2.5rem;
-    } 
+    }
 
     @include media-breakpoint-up(md) {
         font-size: 3rem;
@@ -78,8 +78,8 @@ h2 {
 }
 
 h3 {
-    @include text-formatting($headings_font, 1.25rem, normal, normal, 0.25px, none, $black); 
-    
+    @include text-formatting($headings_font, 1.25rem, normal, normal, 0.25px, none, $black);
+
     @include media-breakpoint-up(sm) {
         font-size: 1.5rem;
     }
@@ -101,11 +101,11 @@ h4 {
 }
 
 h5 {
-     @include text-formatting($headings_font_bold,1.6rem, normal, normal, 0.25px, none, $hover-green); 
+     @include text-formatting($headings_font_bold,1.6rem, normal, normal, 0.25px, none, $hover-green);
 }
 
 h6 {
-        @include text-formatting($site_font_bold,1.1rem, normal, normal, 0.25px, uppercase, $hover-green); 
+        @include text-formatting($site_font_bold,1.1rem, normal, normal, 0.25px, uppercase, $hover-green);
 
 }
 
@@ -132,10 +132,10 @@ h6 {
 
 .container{
     width: 100%;
-    padding: 0 20px 0 20px;  
-    @media screen and (min-width: 1700px){        
-        max-width: 1680px; 
-        padding: 0px;       
+    padding: 0 20px 0 20px;
+    @media screen and (min-width: 1700px){
+        max-width: 1680px;
+        padding: 0px;
     }
 }
 .row{
@@ -145,8 +145,8 @@ h6 {
     color: $primary-color;
 }
 p {
-    @include text-formatting($site_font, 0.75rem, normal, 1.4rem, 0.45px, none, $dark-grey); 
-    
+    @include text-formatting($site_font, 0.75rem, normal, 1.4rem, 0.45px, none, $dark-grey);
+
     @include media-breakpoint-up(lg) {
         font-size: 0.9375rem;
         line-height: 1.875rem;
@@ -170,7 +170,7 @@ p {
          min-height:700px;
     }
     &.offers-banner{
-        min-height:360px; 
+        min-height:360px;
     }
     h1{
         @include translate-text(0%, -50%);
@@ -198,7 +198,7 @@ p {
             top: 15px;
             left: 0px;
         }
-    }    
+    }
 }
 .left-gap{
     @include media-breakpoint-up(xs) {
@@ -230,7 +230,7 @@ p {
         border: 1px solid $hover-green;
         color: $white;
     }
-    
+
 
     &.white-theme{
         background-color: $white;
@@ -241,7 +241,7 @@ p {
             border: 1px solid $light-grey;
             color: $primary-color;
         }
-    }  
+    }
 
     &.white-dark{
         background-color: $white;
@@ -252,14 +252,14 @@ p {
             border: 1px solid $light-grey;
             color: $dark-grey;
         }
-    } 
+    }
 
     &.transparent-dark{
         background-color: transparent;
         color: $dark-grey;
         border: 1px solid $dark-grey;
         &:hover{
-            background-color: $dark-grey;            
+            background-color: $dark-grey;
             color: $white;
         }
     }
@@ -394,7 +394,7 @@ svg:not(:root) {
     @include media-breakpoint-up(lg){
      width: 80px;
     }
-    
+
 }
 
 .form-control, button{
@@ -440,8 +440,8 @@ svg:not(:root) {
     }
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
 
    opacity: 1 !important;
    margin-right: 5px;
@@ -451,11 +451,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .two-btn-margin{
      margin-right:0rem;
-     margin-bottom:1rem;  
+     margin-bottom:1rem;
      @include media-breakpoint-up(lg){
       margin-right:1rem;
     }
-   
+
 }
 
 .show-lg{
