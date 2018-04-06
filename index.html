@@ -26,12 +26,7 @@ permalink_localized:
             <div role="listbox" class="carousel-inner">
                 {% assign sliders = site.data._models.home-page-slider | sortby:sort_order %}
                 {% for slider in sliders %}
-                {% if forloop.index == 1 %}
-                <div class="carousel-item active bg-center-center bg-norepeat bg-cover" style="background-image: url('//cdn.traveltripper.io/site-assets/32_758_14256/media/2018-04-04-050749/wine-country-inn-video.jpg');">
-                  <div class="play-btn"><a href="javascript:void(0);" data-toggle="modal" data-target="#wciVideo" title="WCI Video"><img src="/assets/images/play-btn.svg" alt="Play" /></a></div>
-                </div>
-                {% endif %}
-                <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url({{slider.image.url_large}});">
+                <div class="carousel-item {% if forloop.index == 1 %} active {% endif %} bg-center-center bg-norepeat bg-cover" style="background-image: url({{slider.image.url_large}});">
                     <div class="carousel-caption">
                         {{slider.caption}}
                     </div>
@@ -67,9 +62,7 @@ permalink_localized:
                     {% endregionblock %}
                 </div>
                 <div class="welcome-right">
-                	{% regionblock home_img_1, type:image %}
-                    	<img src="/assets/images/home/welcome-img.jpg" alt="Welcome to Wine Country Inn">
-                    {% endregionblock %}
+                	<iframe class="wcivideo" src="https://www.youtube.com/embed/vFF22t59q28?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
