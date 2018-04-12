@@ -116,11 +116,19 @@
 
       .welcome-right {
         @extend .col-md-5;
-        .wcivideo {
-          width: 100%;
-          height: 300px;
-          margin-top: 50px;
-          padding-left: 60px;
+        .welcome-video {
+          position: relative;
+          max-width: 100%;
+          height: 0;
+          padding-bottom: 56.45%;
+          overflow: hidden;
+          .wcivideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
         }
 
         img {
