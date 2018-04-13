@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 parent: /blog/
 ---
 {% assign blog = page %}
@@ -26,9 +26,9 @@ parent: /blog/
    {%if banner.id == blog.category.id %}
 <section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-blog.jpg);">
 <h1>Blog</h1>
- 
 
-         
+
+
 </section>
   {%endif%}
   {%endfor%}
@@ -57,8 +57,11 @@ parent: /blog/
                         </p>
                     </div>
                     <div class="post-img"  style="background-image: url({{blog.blogimage.url}});"></div>
-                    <div class="blog-description"> 
+                    <div class="blog-description">
                         {{blog.long_description}}
+                        {% if blog.button_label != "" %}
+                        <a href="{{ blog.button_url }}" class="theme-btn blog-btn"> {{ blog.button_label }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        {% endif %}
                     </div>
                     <div class="tags">
                         <ul>
@@ -76,7 +79,7 @@ parent: /blog/
 </section>
 
 <section class="common-banner mt-0" style="background-image: url(/assets/images/hero-amenities.jpg);">
-  
+
   <div class="banner-content">
     <h4>Enjoy a host of <span class="italic">unique extras</span> during your stay.</h4>
     <div class="ita_large_text left-line">Wine Country Inn & Cottages is one of the most beautiful St. Helena hotels near Napa Valley.</div>
