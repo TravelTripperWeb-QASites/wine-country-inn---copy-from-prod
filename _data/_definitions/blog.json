@@ -32,5 +32,9 @@
   "long_description": {
     "required": true,
     "type": "richtext"
-  }
+  },
+  "button_label":
+    {"label": "Button Label"},
+  "button_url":
+    {"label": "Button Url"}
 }
