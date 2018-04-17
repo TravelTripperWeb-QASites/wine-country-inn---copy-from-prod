@@ -149,4 +149,47 @@ function setScrollHeader(){
 
     
 
+//Mobile Redirect Popover
 
+$(document).ready(function () {
+    var viewWidth = $(window).width();
+    if (viewWidth < 480) {
+        if (!Cookies.get('mobilePopup')) {
+            $('#mobileRedirect').modal('show');
+            Cookies.set('mobilePopup', 'valid', { expires: 0.0115, path: "/" }); // need to set the path to fix a FF bug
+            setTimeout(function(){
+                var map2 = new google.maps.Map(document.getElementById('popmap'), {
+                    zoom: 15,
+                    center: {
+                        lat: 41.1000651,
+                        lng: -75.3676258
+                    },
+                    disableDefaultUI: true
+                });
+                var noPoi = [
+                {
+                    featureType: "poi",
+                    stylers: [
+                      { visibility: "off" }
+                    ]
+                  }
+                ];
+
+                map2.setOptions({styles: noPoi});
+                var image = '/images/pocono-pin.png';
+                var popMarker = new google.maps.Marker({
+                    position: {
+                        lat: 41.1000651,
+                        lng: -75.3676258
+                    },
+                    map: map2,
+                    icon: image
+                });
+
+            },2000);
+
+        }
+
+    }
+
+});
