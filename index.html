@@ -24,7 +24,7 @@ permalink_localized:
     <div class="container-fluid no-padding">
         <div data-ride="carousel" class="carousel slide" id="homePageMainSlider">
             <div role="listbox" class="carousel-inner">
-                {% assign sliders = site.data._models.home-page-slider | sortby:sort_order %}
+                {% assign sliders = site.data._models.home-page-slider | sort: 'sort_order' %}
                 {% for slider in sliders %}
                 <div class="carousel-item {% if forloop.index == 1 %} active {% endif %} bg-center-center bg-norepeat bg-cover" style="background-image: url({{slider.image.url_large}});">
                     <div class="carousel-caption">
