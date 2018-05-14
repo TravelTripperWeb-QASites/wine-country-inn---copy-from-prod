@@ -1,5 +1,5 @@
 .offer-promo-tile {
-    margin: 90px auto 2px;
+    margin: 109px auto 2px;
     text-align: center;
     padding: 12px 0;
     background-color: $primary-color;
@@ -19,7 +19,7 @@
         i {padding-right:5px;}
     }
     @media(min-width: 1500px){
-      margin: 126px auto 2px;
+      margin: 116px auto 2px;
               }
     @media screen and (max-width: 1170px) and (min-width: 992px){
                     margin: 97px auto 2px;
@@ -72,7 +72,7 @@
         top: 48%;
         transform: translateY(-48%) !important;
         .modal-content {
-           border-radius: 0px; 
+           border-radius: 0px;
         }
         .modal-body {
             padding: 40px;
@@ -88,7 +88,7 @@
                 text-shadow: none;
                 color: #000;
                 text-transform: uppercase;
-                letter-spacing: .5px; 
+                letter-spacing: .5px;
                 margin-bottom: 20px;
             }
             .signup {
@@ -133,7 +133,7 @@
                 h3{
                     span {
                         color:#ed1c25;
-                    } 
+                    }
                 }
                 h5 {
                     margin-bottom: 20px;
