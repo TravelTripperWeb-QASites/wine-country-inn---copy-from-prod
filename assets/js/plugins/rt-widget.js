@@ -83,7 +83,7 @@ var css = __webpack_require__(2);
 	//plugin setup
 
 	$.fn.RTwidgets = function (options) {
-		//default options 
+		//default options
 		var defaults = {
 			hotel_id: 'NYCROY',
 			portal_id: 'royaltonhotel',
@@ -91,7 +91,7 @@ var css = __webpack_require__(2);
 			currency: 'USD',
 			offer_popup_widget: {
 				show: true,
-				header_title: 'LIMITED TIME OFFER',
+				header_title: 'For Best Rates Book Direct!',
 				primary_color: '#33a1cc',
 				secondary_color: '#616161',
 				overlay_text_color: '#ffffff',
@@ -108,7 +108,7 @@ var css = __webpack_require__(2);
 
 		var popup_widget = new _rt_offer_popup_widget2.default(widget_settings);
 		if (widget_settings.offer_popup_widget.show) {
-			//if popup offer widget true 
+			//if popup offer widget true
 			popup_widget.show_widget();
 		} else {
 			popup_widget.show_widget();
@@ -116,7 +116,7 @@ var css = __webpack_require__(2);
 	};
 })(jQuery);
 
- 
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -133,7 +133,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /**
- * Offer Popup will show based on session 
+ * Offer Popup will show based on session
  */
 var rt_offer_popup_widget = function () {
   function rt_offer_popup_widget(options) {
