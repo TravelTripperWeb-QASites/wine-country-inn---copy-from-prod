@@ -1,0 +1,112 @@
+---
+layout: default
+title: "Activities & Events in Napa Valley | Wine Country Inn Blog"
+meta_description: "Read the Wine Country Inn's blog to stay up to date on what's happening in Napa Valley and around our St. Helena inn including events & other attractions."
+parent: blog
+meta_tags: noindex, follow
+---
+<section class="inner-page-banner bg-img-cover" style="background-image: url('/assets/images/hero-blog.jpg');">
+  {% regionblock blog_heading_1, type:header %}
+    <h1>Blog</h1>
+  {% endregionblock %}
+</section>
+
+<section class="blog-main-sec">
+  <div class="blog-main-inner">
+    <div class="blog-box">
+      {% for post in data_paginator.posts %}
+        <div class="post">
+          <div class="row">
+
+            <div class="col-md-5">
+              <div class="post-img" style="background-image: url('{{ post.blogimage.url }}');"></div>
+            </div>
+
+            <div class="col-md-7">
+              <div class="info">
+                <h4><a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a></h4>
+                <div class="date">
+                  <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+                </div>
+                {{ post.short_description }}
+                <a href="/blog/{{ post.url_friendly_name }}/" class="btn-custom no-border read-more-btn"> Read more <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      {% endfor %}
+
+      {% if data_paginator.total_pages > 1 %}
+        <div class="pagination">
+          {% if data_paginator.previous_page %}
+            {% if data_paginator.page %}
+              <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"></a>
+            {% else %}
+              <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+            {% endif %}
+          {% else %}
+            <a href="#" name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow disabled"></a>
+          {% endif %}
+          <div class="pagnum">
+            {% for page in (1..data_paginator.total_pages) %}
+              {% if page == 1 %}
+                <a href="/blog/">{{ page }}</a>
+              {% elsif page == data_paginator.page %}
+                <a class="current" href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
+              {% else %}
+                <a href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% if data_paginator.next_page %}
+            <a name="next" title="next" class="bg-center-center bg-norepeat right-arrow" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> </a>
+          {% else %}
+            <a href="#" name="next" title="next" class="bg-center-center bg-norepeat right-arrow disabled"> </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+    <!-- {% include blog-aside.html %} -->
+  </div>
+</section>
+
+<section class="common-banner mt-0" style="background-image: url('/assets/images/banner-blog-listing.jpg');">
+  <div class="banner-content">
+    {% regionblock blog_heading_2, type:header %}
+      <h4>Stay<span class="italic"> in the heart</span> of the Napa Valley</h4>
+    {% endregionblock %}
+    <div class="ita_large_text left-line">
+      {% regionblock blog_text_1, type:text %}
+        Comfort, hospitality, and wine country charm in a one-of-a-kind boutique hotel.
+      {% endregionblock %}
+    </div>
+    {% regionblock blog_text_2, type:text %}
+      <a href="/amenities/" class="theme-btn">view amenities<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    {% endregionblock %}
+  </div>
+</section>
+
+<!-- Sojern Tag v6_js, Pixel Version: 1 -->
+<script>
+    (function () {
+
+      var params = {};
+
+      /* Please do not modify the below code. */
+      var cid = [];
+      var paramsArr = [];
+      var cidParams = [];
+      var pl = document.createElement('script');
+      var defaultParams = {"vid":"hot"};
+      for(key in defaultParams) { params[key] = defaultParams[key]; };
+      for(key in cidParams) { cid.push(params[cidParams[key]]); };
+      params.cid = cid.join('|');
+      for(key in params) { paramsArr.push(key + '=' + encodeURIComponent(params[key])) };
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src = 'https://beacon.sojern.com/pixel/p/32507?f_v=v6_js&p_v=1&' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    })();
+</script>
+<!-- End Sojern Tag -->

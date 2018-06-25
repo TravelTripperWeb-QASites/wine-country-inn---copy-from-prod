@@ -1,6 +1,8 @@
-{ 
-  "title": "Dining","url_friendly_name":"dining", 
-  "categoryimage": {
-    "url": "/images/hero-main.jpg"
-  } 
+{
+  "title": "Dining",
+  "meta_title": "Dining | Blog | Wine Country inn",
+  "meta_description": "Read the Wine Country Inn's blog to stay up to date on what's happening in Napa Valley and around our St. Helena inn including events & other attractions.",
+  "url_friendly_name": "dining",
+  "description": "Read the Wine Country Inn's blog to stay up to date on what's happening in Napa Valley and around our St. Helena inn including events & other attractions.",
+  "order": "1"
 }
