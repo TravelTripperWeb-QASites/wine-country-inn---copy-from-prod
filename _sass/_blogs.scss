@@ -1,7 +1,8 @@
 .blog {
   @include make-container;
   max-width: 1440px;
-  margin-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
   @include media-breakpoint-up(md) {
     margin-top: 60px;
   }
@@ -206,10 +207,10 @@
         color: $grey5;
         border-bottom: 1px solid $light-grey;
         &:hover {
-          color: $primary-color;
+          color: $hover-green;
         }
         span {
-          color: $primary-color;
+          color: $hover-green;
         }
       }
     }

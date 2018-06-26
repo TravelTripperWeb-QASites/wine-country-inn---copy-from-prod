@@ -2,81 +2,86 @@
 layout: default
 parent: /blog/
 ---
+{% assign post = site.data._models.blog  %}
 {% assign blog = page %}
+{% assign seo_title = blog.seo_title %}
+{% assign seo_description = blog.seo_description %}
+
+{% for p in post %}
+    {% if p.url_friendly_name == blog.url_friendly_name %}
+        {% assign pInd = forloop.index0 | minus: 1 %}
+        {% assign nInd = forloop.index0 | plus: 1 %}
+        {% if forloop.first != true %}
+            {% assign prevPostTitle = post[pInd].title %}
+            {% assign prevPostUrl = post[pInd].url_friendly_name %}
+        {% endif %}
+        {% if forloop.last != true %}
+            {% assign nextPostTitle = post[nInd].title %}
+            {% assign nextPostUrl = post[nInd].url_friendly_name %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+
 {% assign model = page %}
 
-{% assign post = site.data._models.blog  %}
-{% for p in post %}
-  {% if p.url_friendly_name == blog.url_friendly_name %}
-    {% assign pInd = forloop.index0 | minus: 1 %}
-    {% assign nInd = forloop.index0 | plus: 1 %}
-    {% if forloop.first != true %}
-      {% assign prevPostTitle = post[pInd].title %}
-      {% assign prevPostUrl = post[pInd].url_friendly_name %}
-    {% endif %}
-    {% if forloop.last != true %}
-      {% assign nextPostTitle = post[nInd].title %}
-      {% assign nextPostUrl = post[nInd].url_friendly_name %}
-    {% endif %}
-
-  {% endif %}
-{% endfor %}
-{% assign category = site.data._models.category  %}
-{%for banner in category%}
-   {%if banner.id == blog.category.id %}
-<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-blog.jpg);">
-<h1>Blog</h1>
-
-
-
+<section class="inner-page-banner bg-img-cover" style="background-image: url('/assets/images/hero-blog.jpg');">
+    <h1>Blog</h1>
 </section>
-  {%endif%}
-  {%endfor%}
-<section class="blog-main-sec blog-detail-main">
-    <div class="blog-main-inner">
-        <div class="blog-box blog-details">
-            <div class="post">
-                <div class="next-prev">
+
+<div class="white-bar"></div>
+
+<section class="blog blog--single">
+  <div class="blog__row">
+    <div class="blog__categories">
+      {% include blog-categories.html %}
+    </div>
+    <div class="blog__list">
+      <div class="blog__item">
+        <h1>{{ blog.title }}</h1>
+        <div class="blog__info">
+          <span class="blog__date">{% assign d = blog.date | date: "%-d" %}
+                  {{ blog.date | date: "%B" }}
+                  {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                  {{ blog.date | date: "%Y" }}</span>
+					{% if blog.category %}
+					<a href="/blog/category/{{blog.category.url_friendly_name}}/" class="blog__category">{{ blog.category.title }}</a>
+					{% endif %}
+        </div>
+
+        <figure class="blog__image">
+          <img src="{{ blog.blogimage.url_medium }}" alt="{{ blog.title }}">
+        </figure>
+
+        {{ blog.long_description }}
+
+        <div class="blog__share">
+          {% include blog-share.html %}
+        </div>
+
+        <div class="pagenav">
                     {%if prevPostUrl %}
-                    <a href="/blog/{{prevPostUrl}}" title="Prev" class="prev">Prev</a>
+                    <a class="prev" href="/blog/{{prevPostUrl}}" title="Previous Blog"><i class="fa fa-angle-left" aria-hidden="true"></i> Prevous </a> |
+                    {%else%}
+                    <a class="prev not-active" href="/blog/{{prevPostUrl}}" title="Current Blog"><i class="fa fa-angle-left" aria-hidden="true"></i> Prevous </a> |
                     {%endif%}
                     {%if nextPostUrl %}
-                    <a href="/blog/{{nextPostUrl}}" title="Next" class="next">Next</a>
+                    <a class="next" href="/blog/{{nextPostUrl}}" title="Next Blog">Next <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    {%else%}
+                    <a class="next not-active" href="/blog/{{nextPostUrl}}" title="Next Blog">Next <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     {%endif%}
                 </div>
-                <h3 class="blog-details-title">{{blog.title}}</h3>
-                <div class="info">
-                    <div class="date">
-                        {% assign d = blog.date | date: "%-d" %}
-                        <p><span class="">{{ blog.date | date: "%B" }} {{ d }},
-                            {{ blog.date | date: "%Y" }}</span>{%for banner in category%}
-                            {%if banner.id == blog.category %}
-                            <span class="categories"><a href="/blog/category/{{banner.url_friendly_name}}/">{{banner.title}}</a></span>
-                            {%endif%}
-                            {%endfor%}
-                        </p>
-                    </div>
-                    <div class="post-img"  style="background-image: url({{blog.blogimage.url}});"></div>
-                    <div class="blog-description">
-                        {{blog.long_description}}
-                        {% if blog.button_label != "" %}
-                        <a href="{{ blog.button_url }}" class="theme-btn blog-btn"> {{ blog.button_label }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        {% endif %}
-                    </div>
-                    <div class="tags">
-                        <ul>
-                            <span>share: </span>
-                            <li><a rel="nofollow" href="javascript:void(0)" class="fb-share" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a rel="nofollow" href="javascript:void(0)" class="twitter-share" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
+        <div class="btn-holder">
+          <a href="/blog/" class="theme-btn">See all blog posts</a>
         </div>
-        <!--  {% include blog-aside.html %} -->
+      </div>
+
     </div>
+
+  </div>
 </section>
+
 
 <section class="common-banner mt-0" style="background-image: url(/assets/images/hero-amenities.jpg);">
 
