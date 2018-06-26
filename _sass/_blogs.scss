@@ -261,6 +261,9 @@
       }
     }
   }
+	&--catpage {
+		margin-top: 0;
+	}
 }
 
 .blog-results {
@@ -295,6 +298,8 @@
     margin-top: 25px;
   }
 }
+
+
 
 // pagination
 .page-number {

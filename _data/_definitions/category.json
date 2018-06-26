@@ -1,10 +1,19 @@
 {
   "title": {
+    "label": "Category Name",
     "required": true
   },
-  "categoryimage":
-		{"type":"image","required":true},
+  "description": {
+    "label": "Category Description",
+    "required": true
+  },
+  "meta_title":
+    {"type":"text"},
+  "meta_description":
+    {"type":"text"},
   "url_friendly_name": {
+    "type": "url_slug",
+    "label": "URL Friendly Name",
     "required": true
   }
 }
