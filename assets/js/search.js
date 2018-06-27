@@ -13,7 +13,7 @@
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<li>No results found <div class="btn-holder"><a href="/blog/" class="button secondary">See all blog posts</a></div></li>';
+      searchResults.innerHTML = '<li>No results found <div class="btn-holder"><a href="/blog/" class="theme-btn">See all blog posts</a></div></li>';
     }
   }
 
