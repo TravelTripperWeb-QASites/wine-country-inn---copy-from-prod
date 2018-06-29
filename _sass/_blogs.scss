@@ -75,8 +75,9 @@
     display: inline-block;
     margin-left: 8px;
     padding: 0 15px;
-    font-family: $headings_font_semiboldita;
+    font-family: $headings_font;
 		font-size: 17px;
+    letter-spacing: 1px;
     line-height: normal;
     color: $hover-green;
     border-left: solid 1px $black;
