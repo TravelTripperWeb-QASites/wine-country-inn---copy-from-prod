@@ -183,6 +183,33 @@ p {
         text-transform:uppercase;
          z-index: 3;
     }
+    .hero-banner-content {
+      max-width: 700px;
+      padding: 0 15px;
+      margin: 0 auto;
+      color: $white;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      right: 0;
+      left: 0;
+      transform: translateY(-50%);
+      text-align: center;
+      left: 0;
+      right: 0;
+        h1 {
+          position: relative;
+          @include media-breakpoint-up(md) {
+            margin-bottom: 30px;
+          }
+        }
+        p {
+          color: #fff;
+          @include media-breakpoint-up(md) {
+            font-size: 16px;
+          }
+        }
+    }
 }
 
 .left-line{
