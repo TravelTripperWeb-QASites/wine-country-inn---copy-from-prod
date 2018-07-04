@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<section class="inner-page-banner bg-img-cover" style="background-image: url('/assets/images/hero-blog.jpg');">
+  <div class="hero-banner-content">
+    <h1>Blog</h1>
+    <p>Whether you’re looking for a wine and food-filled vacation, an outdoor adventure, or a day exploring local art and culture, Napa Valley has plenty to offer. Stay up to date with all happenings in California wine country.
+</p>
+  </div>
+</section>
+
+
+<section class="accommodations-container no-padding">
+    <div class="accommodations-row">
+        <div class="accommodations-col">
+            <h3>{{ page.title }}</h3>
+            <div class="left-line">
+                <h5 class="semi-ital">{{ page.description }}</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog blog--catpage">
+
+  <div class="blog__row">
+    <div class="blog__categories">
+      {% include blog-categories.html %}
+    </div>
+    <div class="blog__list">
+
+      {% for post in site.data._models.blog %}
+      {% if post.category.url_friendly_name == page.url_friendly_name %}
+      <div class="blog__item">
+        <figure class="blog__image">
+          <a href="/blog/{{ post.url_friendly_name }}/">
+            <img src="{{ post.blogimage.url_medium }}" alt="{{ post.title }}">
+          </a>
+        </figure>
+        <h2>
+          <a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a>
+        </h2>
+        <div class="blog__info">
+          <span class="blog__date">{% assign d = post.date | date: "%-d" %}
+                  {{ post.date | date: "%B" }}
+                  {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                  {{ post.date | date: "%Y" }} </span> {% if post.category %}
+          <a href="/blog/category/{{post.category.url_friendly_name}}/" class="blog__category">{{ post.category.title }}</a>
+          {% endif %}
+        </div>
+        {% if post.short_description != "" %} {{ post.short_description }} {% endif %}
+        <div class="btn-holder">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="theme-btn">Read More</a>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>

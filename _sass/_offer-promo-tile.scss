@@ -1,10 +1,16 @@
 .offer-promo-tile {
-    margin: 109px auto 2px;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    left: 0;
     text-align: center;
     padding: 12px 0;
     background-color: $primary-color;
     color:#fff;
     max-width: 100%;
+    @media (min-width: 580px) {
+      top: 79px;
+    }
     h3,a {
         display: inline-block;
         margin: 0px 15px;
@@ -18,15 +24,6 @@
     a {
         i {padding-right:5px;}
     }
-    @media(min-width: 1500px){
-      margin: 116px auto 2px;
-              }
-    @media screen and (max-width: 1170px) and (min-width: 992px){
-                    margin: 97px auto 2px;
-               }
-     @media(max-width: 991px){
-      margin: 71px auto 2px;
-                       }
 }
 .promo-code-reminder {
     margin: 90px auto 2px;
