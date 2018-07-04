@@ -35,7 +35,11 @@ meta_tags: noindex, follow
                         {{ post.date | date: "%B" }}
                         {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
                         {{ post.date | date: "%Y" }} </span>
+                        {% if post.category %}
                         <a href="/blog/category/{{post.category.url_friendly_name}}/" class="blog__category">{{ post.category.title }}</a>
+                        {% else %}
+                        <a href="/blog/category/napa-valley-outdoors/" class="blog__category">Napa Valley Outdoors</a>
+                        {% endif %}
         </div>
         {% if post.short_description != "" %}
           {{ post.short_description }}
