@@ -30,8 +30,8 @@ $(document).ready(function(){
 	      expires: 1
 	    });
 	}
-     
-	$('.fb-share').click(function(e){ 
+
+	$('.fb-share').click(function(e){
         e.preventDefault();
         FB.ui({
             method: 'share_open_graph',
@@ -50,11 +50,11 @@ $(document).ready(function(){
     });
 
     $('.twitter-share').click(function() {
-       // window.open("https://www.w3schools.com");       
+       // window.open("https://www.w3schools.com");
 
         var url = window.location.href;
         var media = $(".post-img").css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '');
-        var desc = $("h3.blog-details-title").text();    
+        var desc = $("h3.blog-details-title").text();
         $('meta[name="twitter:image"]').attr('content', media);
         var hash = "%23wcountryinn";
 
@@ -68,7 +68,7 @@ $(document).ready(function(){
 	jQuery('#accomPageSlider').css('height',height+'px');   //and setting height of carousel
 
 
-	setScrollHeader();  
+	setScrollHeader();
   	$(window).scroll(function (event) {
 	    setScrollHeader();
 	});
@@ -112,7 +112,7 @@ $(document).ready(function(){
 	        loop: false
 	      }
 	    }
-	  });	
+	  });
 	$('.month-select').niceSelect();
 	$('#event-month').on('change', function() {
 	  var mselected = this.value;
@@ -138,16 +138,16 @@ $(document).ready(function(){
 
 function setScrollHeader(){
 	var scroll = $(window).scrollTop();
-	if(window.innerWidth > 992) {		
+	if(window.innerWidth > 1200) {		
 	    if(scroll == 0){
 	    	$(".navbar-section").removeClass("scroll-header");
 	    } else {
 	    	$(".navbar-section").addClass("scroll-header");
-	    }	
+	    }
 	}
 }
 
-    
+
 
 //Mobile Redirect Popover
 

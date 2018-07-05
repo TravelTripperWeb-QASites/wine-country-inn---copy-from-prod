@@ -1,6 +1,10 @@
 {% assign menu = site.data.navigation.menu %}
 <section class="navbar-section">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <nav class="navbar navbar-toggleable-lg navbar-light bg-faded">
+
+      <!--Offer Promo Tile & Popup-->
+      {% include offer-promo-popup.html %}
+
         <button class="navbar-toggler navbar-toggler-right" type="button" title="navigation" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,8 +39,7 @@
           <a href="tel:(707) 963-7077" class="mobile-call-btn"> <i class="fa fa-fw fa-phone" aria-hidden="true"></i> </a>
         <a href="https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513" target="_blank" class="theme-btn check-availability-btn" title="Book Now">Book Now</a>
 
-        <!--Offer Promo Tile & Popup-->
-        {% include offer-promo-popup.html %}
-        
+
+
     </nav>
 </section>

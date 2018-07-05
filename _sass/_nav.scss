@@ -20,7 +20,7 @@
 			@media screen and (max-width: 1650px){
 				padding: 8px 5px;
 			}
-			@media screen and (min-width: 992px){
+			@media screen and (min-width: 1200px){
 				display: none;
 				@include transition-time(0.4s);
 				width: 300px;
@@ -36,7 +36,7 @@
 		@media screen and (max-width: 1499px){
 			top: 20px;
 		}
-		@media screen and (max-width: 991px){
+		@media screen and (max-width: 1199px){
 			top: 0px;
 		}
 		.navbar-nav{
@@ -52,7 +52,7 @@
 				padding-right: 35px;
 				position: relative;
 				@media screen and (max-width: 1650px){
-					padding-right: 25px;
+					padding-right: 18px;
 				}
 				@media screen and (max-width: 1499px){
 					padding-right: 18px;
@@ -71,8 +71,8 @@
 					@include text-formatting($site_font_medium, 0.85rem, normal, normal, 0.5px, uppercase, $white);
 					padding: 25px 0 10px 0;
 					border-bottom: 1px solid transparent;
-				    @include transition-time(0.4s);
 				    @media screen and (max-width: 1499px){
+						padding: 16px 0 10px 0;
 						font-size: .75rem;
 					}
 					@media screen and (max-width: 1299px) and (min-width: 992px){
@@ -104,7 +104,7 @@
 					@media screen and (max-width: 1299px) and (min-width: 992px){
 						width: 140px;
 					}
-					@media screen and (max-width: 991px){
+					@media screen and (max-width: 1199px){
 						display: none;
 					}
 				    a{
@@ -130,8 +130,15 @@
 				}
 			}
 		}
+		.navbar-collapse {
+			position: relative;
+			z-index: 10;
+			@include media-breakpoint-down(md) {
+				background-color: rgba($black, .85);
+			}
+		}
 		.navbar-toggler{
-			background-color: $white;
+			// background-color: $white;
 			position: absolute;
 			left: 0px;
 			right: 0px;
@@ -139,6 +146,10 @@
 			width: 55px;
 			top: 12px;
 			border-radius: 0;
+			outline: none;
+		}
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 		}
 		.check-availability-btn{
 			width: 250px;
@@ -154,7 +165,7 @@
 			@media screen and (max-width: 1040px){
 				font-size: 0.95rem;
 			}
-			@media screen and (max-width: 991px){
+			@media screen and (max-width: 1199px){
 				position: absolute;
 				right: 0px;
 				width: 240px;
@@ -178,8 +189,12 @@
 		.navbar-nav{
 			margin-left:auto;
 			.nav-item{
+				padding-right: 18px;
 				&.logo-item{
 					display: none;
+				}
+				a {
+					padding: 16px 0 10px 0;
 				}
 				@media screen and (min-width: 992px){
 					&.homenav{
