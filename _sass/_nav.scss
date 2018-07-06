@@ -32,6 +32,15 @@
 			@media screen and (max-width: 580px){
 				width: 120px;
 			}
+			img {
+				@media screen and (max-width: 1650px){
+					width: 100%;
+					max-width: 131px;
+				}
+				@media screen and (max-width: 991px){
+					max-width: 110px;
+				}
+			}
 		}
 		@media screen and (max-width: 1499px){
 			top: 20px;
@@ -40,13 +49,13 @@
 			top: 0px;
 		}
 		.navbar-nav{
-			padding-left: 35px;
-			@media screen and (max-width: 1650px){
-				padding-left: 25px;
-			}
-			@media screen and (max-width: 1499px){
-				padding-left: 18px;
-			}
+			// padding-left: 35px;
+			// @media screen and (max-width: 1650px){
+			// 	padding-left: 25px;
+			// }
+			// @media screen and (max-width: 1499px){
+			// 	padding-left: 18px;
+			// }
 			.nav-item{
 				padding-bottom: 10px;
 				padding-right: 35px;
@@ -69,7 +78,7 @@
 				}
 				a{
 					@include text-formatting($site_font_medium, 0.85rem, normal, normal, 0.5px, uppercase, $white);
-					padding: 25px 0 10px 0;
+					padding: 20px 0 10px 0;
 					border-bottom: 1px solid transparent;
 				    @media screen and (max-width: 1499px){
 						padding: 16px 0 10px 0;
@@ -159,7 +168,7 @@
 			font-size: 1rem;
 			@media screen and (max-width: 1650px){
 				padding-left: 240px;
-				padding: 34px 10px 34px 10px;
+				padding: 30px 10px 30px 10px;
 
 			}
 			@media screen and (max-width: 1040px){
