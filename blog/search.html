@@ -1,45 +1,29 @@
 ---
 layout: default
-title: Search
-meta_description:
 ---
-<section class="inner-page-banner bg-img-cover" style="background-image: url(/images/blogs/blog-box.jpg);">
+
+<section class="inner-page-banner bg-img-cover" style="background-image: url('/assets/images/hero-blog.jpg');">
+  <div class="hero-banner-content">
     <h1>Blog</h1>
+    <p>Whether you’re looking for a wine and food-filled vacation, an outdoor adventure, or a day exploring local art and culture, Napa Valley has plenty to offer. Stay up to date with all happenings in California wine country.
+    </p>
+  </div>
 </section>
 
-<section class="blog-main-sec">
-    <div class="blog-main-inner">
-        <div class="blog-box">
-          <h3 class="pb-4"> SEARCH RESULT: </h3> 
-          <ul id="search-results"></ul>
-          <div class="pagination">
-                  <a id="categorypost-previous" class="bg-center-center bg-norepeat left-arrow" href="#"> </a> 
-                    <div class="paging-nav pagnum">  
-                    </div> 
-                        <a id="categorypost-next" class="bg-center-center bg-norepeat right-arrow" href="#"> </a>  
-        </div>
-        </div>
-      
-        {%include blog-aside.html%}
-  </div>  
-</section>
+<section class="blog">
+  <div class="blog__row">
+    <div class="blog__categories">
+      {% include blog-categories.html %}
+    </div>
+    <div class="blog__list">
+      <div class="blog__item">
 
-<section class="special-offers">
-  <div class="special-offers-fluid no-padding">
-    <div class="special-offers-wrapper bg-center-center bg-norepeat bg-cover" style="background-image: url('/images/blogs/stay-right-bg.jpg');">
-      <div class="special-offers-container no-padding">
-        <div class="endless-enjoyment make-tradition">
-          <div class="text-section">            
-            <h2>
-              stay right<br>on the beach
-            </h2>
-            <a href="" title="Book Your Stay" class="btn-custom dark-blue">Book Your Stay <i class="fa  fa-caret-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="clear-float"></div>
-        </div>
+          <h3>Search Results:</h3>
+          <ul id="search-results" class="blog-results"></ul>
 
       </div>
     </div>
+
   </div>
 </section>
 
@@ -47,7 +31,7 @@ meta_description:
   window.store = {
     {% for post in site.data._models.blog %}
       "{{ post.url_friendly_name }}": {
-        "title": "{{ post.title | xml_escape }}", 
+        "title": "{{ post.title | xml_escape }}",
         "category": "{{ post.category.title | xml_escape }}",
         "content": {{ post.short_description | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url_friendly_name | xml_escape }}"

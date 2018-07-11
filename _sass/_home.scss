@@ -602,14 +602,21 @@
           .fa {
             margin-left: 5px;
           }
-
           &:hover {
             color: $hover-green;
           }
         }
+        .blog-link {
+          color: $hover-green !important;
+        }
       }
     }
   }
+
+}
+
+.blog-btn-holder {
+  text-align: center;
 }
 
 .items-heading-row {
