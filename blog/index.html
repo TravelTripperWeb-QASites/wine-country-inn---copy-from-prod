@@ -6,68 +6,63 @@ parent: blog
 meta_tags: noindex, follow
 ---
 <section class="inner-page-banner bg-img-cover" style="background-image: url('/assets/images/hero-blog.jpg');">
-  {% regionblock blog_heading_1, type:header %}
+  <div class="hero-banner-content">
     <h1>Blog</h1>
-  {% endregionblock %}
+    <p>Whether you’re looking for a wine and food-filled vacation, an outdoor adventure, or a day exploring local art and culture, Napa Valley has plenty to offer. Stay up to date with all happenings in California wine country.
+</p>
+  </div>
 </section>
 
-<section class="blog-main-sec">
-  <div class="blog-main-inner">
-    <div class="blog-box">
+<section class="blog">
+  <div class="blog__row">
+    <div class="blog__categories">
+      {% include blog-categories.html %}
+    </div>
+    <div class="blog__list">
       {% for post in data_paginator.posts %}
-        <div class="post">
-          <div class="row">
+      <div class="blog__item">
+        <figure class="blog__image">
+          <a href="/blog/{{ post.url_friendly_name }}/">
+            <img src="{{ post.blogimage.url_medium }}" alt="{{ post.title }}">
+          </a>
+          </figure>
 
-            <div class="col-md-5">
-              <div class="post-img" style="background-image: url('{{ post.blogimage.url }}');"></div>
-            </div>
-
-            <div class="col-md-7">
-              <div class="info">
-                <h4><a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a></h4>
-                <div class="date">
-                  <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-                </div>
-                {{ post.short_description }}
-                <a href="/blog/{{ post.url_friendly_name }}/" class="btn-custom no-border read-more-btn"> Read more <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-              </div>
-            </div>
-
-          </div>
+        <h2>
+          <a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a>
+        </h2>
+        <div class="blog__info">
+          <span class="blog__date">{% assign d = post.date | date: "%-d" %}
+                        {{ post.date | date: "%B" }}
+                        {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                        {{ post.date | date: "%Y" }} </span>
+                        {% if post.category %}
+                        <a href="/blog/category/{{post.category.url_friendly_name}}/" class="blog__category">{{ post.category.title }}</a>
+                        {% else %}
+                        <a href="/blog/category/napa-valley-outdoors/" class="blog__category">Napa Valley Outdoors</a>
+                        {% endif %}
         </div>
+        {% if post.short_description != "" %}
+          {{ post.short_description }}
+        {% endif %}
+        <div class="btn-holder">
+          <a href="/blog/{{ post.url_friendly_name }}/" class="theme-btn">Read More</a>
+        </div>
+      </div>
       {% endfor %}
 
-      {% if data_paginator.total_pages > 1 %}
-        <div class="pagination">
-          {% if data_paginator.previous_page %}
-            {% if data_paginator.page %}
-              <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"></a>
-            {% else %}
-              <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+{% if data_paginator.total_pages > 1 %}
+            <div class="page-number">Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</div>
+              <ul class="pagination justify-content-center">
+                <li class="page-item {% if data_paginator.previous_page %}{% else %}disabled{% endif %}">
+                  <a class="page-link" href="{% if data_paginator.previous_page %}{{ data_paginator.previous_page_path }}{% else %}#{% endif %}">Previous</a>
+                </li>
+                <li class="page-item {% if data_paginator.next_page %}{% else %}disabled{% endif %}">
+                  <a class="page-link" href="{% if data_paginator.next_page %}{{ data_paginator.next_page_path }}{% else %}#{% endif %}">Next</a>
+                </li>
+              </ul>
             {% endif %}
-          {% else %}
-            <a href="#" name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow disabled"></a>
-          {% endif %}
-          <div class="pagnum">
-            {% for page in (1..data_paginator.total_pages) %}
-              {% if page == 1 %}
-                <a href="/blog/">{{ page }}</a>
-              {% elsif page == data_paginator.page %}
-                <a class="current" href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
-              {% else %}
-                <a href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
-              {% endif %}
-            {% endfor %}
-          </div>
-          {% if data_paginator.next_page %}
-            <a name="next" title="next" class="bg-center-center bg-norepeat right-arrow" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> </a>
-          {% else %}
-            <a href="#" name="next" title="next" class="bg-center-center bg-norepeat right-arrow disabled"> </a>
-          {% endif %}
-        </div>
-      {% endif %}
     </div>
-    <!-- {% include blog-aside.html %} -->
+
   </div>
 </section>
 

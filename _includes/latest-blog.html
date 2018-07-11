@@ -1,31 +1,34 @@
 <section class="items-grid">
-	<div class="items-container">		
+	<div class="items-container">
 
 			<div class="items-heading-row">
-		<a href="/blog/" class="view-all-items">view all posts <i class="fa fa-angle-right"></i></a>	
-			<div class="items-heading-text">			
+		<!-- <a href="/blog/" class="view-all-items">view all posts <i class="fa fa-angle-right"></i></a> -->
+			<div class="items-heading-text">
 				<h2 class="left-gap">Latest from <i class="italic">our blog</i> <span class="right-line"></span></h2>
 			</div>
 			<!-- <div class="items-heading-underline">
 				<a href="#"><h6>View All Posts</h6></a>
 			</div> -->
 		</div>
-		
+
 		<div class="items-row">
 		 {% assign blog-List = site.data._models.blog | sort:'order' %}
          {% for blog-item in blog-List | limit: 3 %}
 			<div class="item-single">
 				<div class="item-inner">
 					<div class="item-image" style="background-image: url({{blog-item.blogimage.url}});">
-						
+
 					</div>
 					<div class="item-text left-line">
 						<a href="/blog/{{ blog-item.url_friendly_name }}/" title="{{blog-item.title}}"> <h3>{{blog-item.title | truncatewords:10 }}</h3> </a>
-						<a href="/blog/{{ blog-item.url_friendly_name }}/" title="Read More">Read More <i class="fa fa-angle-right"></i></a>
+						<a href="/blog/{{ blog-item.url_friendly_name }}/" class="blog-link" title="Read More">Read More <i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
 			</div>
 		{% endfor %}
+		</div>
+		<div class="blog-btn-holder">
+			<a href="/blog/" class="theme-btn">view all posts <i class="fa fa-angle-right"></i></a>
 		</div>
 	</div>
 </section>

@@ -1,5 +1,5 @@
 {
-  "category": "category1",
+  "category": "category2",
   "title": "Roll Your Sleeves Up for a New Recipe from Our Book!",
   "blogimage": {
     "url": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-064444/roll-your-sleeves-up-for-a-new-recipe-from-our-book.jpg",
@@ -18,12 +18,13 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-064444/xsmall_roll-your-sleeves-up-for-a-new-recipe-from-our-book.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-064444/thumb_roll-your-sleeves-up-for-a-new-recipe-from-our-book.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-064444/roll-your-sleeves-up-for-a-new-recipe-from-our-book.jpg",
-    "alt": "Roll Your Sleeves Up for a New Recipe from Our Book"
+    "alt": "Roll Your Sleeves Up for a New Recipe from Our Book",
+    "caption": ""
   },
   "seo_title": "Roll Your Sleeves Up for a New Recipe from Our Book",
   "seo_description": "Place all ingredients except oil in a large stock pot and stew for a couple hours, until meat is tender.",
   "url_friendly_name": "roll-your-sleeves-up-for-a-new-recipe-from-our-book",
   "date": "2017-08-31T06:00:00.000Z",
-  "short_description": "<p><span style=\"font-family: Roboto, sans-serif; font-size: 16px;\">Place all ingredients except oil in a large stock pot and stew for a couple hours, until meat is tender.</span></p>",
+  "short_description": "<p>Place all ingredients except oil in a large stock pot and stew for a couple hours, until meat is tender.</p>",
   "long_description": "<h4>Pepsi &amp; OJ Carnitas by Jim</h4>\n<h4>Ingredients:</h4>\n<ul>\n<li>3lbs pork shoulder, cut into 2 inch or smaller cubes</li>\n<li>1 Qt bottle of Pepsi</li>\n<li>1 Qt bottle of good orange juice</li>\n<li>3 large onions rough chopped</li>\n<li>20 to 30 cloves garlic</li>\n<li>8 tbls chili powder</li>\n<li>4 tbls cumin if desired (my wife doesn&rsquo;t care much for cumin)</li>\n<li>Enough neutral cooking oil (or bacon grease) to brown meat after stewing</li>\n<li>Salt to taste</li>\n</ul>\n<h4>Directions:</h4>\n<p>Place all ingredients except oil in a large stock pot and stew for a couple hours, until meat is tender. Let cool and separate the liquid from the solids. Heat some oil in a large frying pan and (in small batches) add meat mixture and brown deeply. When fully browned add a portion of the liquid to the sizzling pan and reduce while deglazing the pan. This dish needs very little salt, but if you are going to salt it now would be the time. Repeat until all meat is browned and all liquid is reduced. When you are done most of the meat will be shredded and some might still be in chunks. If you want it to be a stand-alone dish just treat it more gently in the pan to keep the chunks. I almost always use this dish as a filler for burritos, enchiladas or as a base for tostadas so I prefer to shred the meat while browning to make sure every fiber is browned and coated with the reduction.</p>"
 }
