@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{% assign seo_title = page.data.title %}
+
+<section>
+  <div class="container-fluid no-padding">
+    <div class="page-banner location-banner" style="background-image: url(/images/gates/events-banner.jpg)">
+      <h1 class="page-title">Blog</h1>
+    </div>
+  </div>
+</section>
+
+<section class="blog-section m-t-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="blog-list">
+                {% for post in site.data._models.blog %}
+                    {% if post.category.url_friendly_name == page.url_friendly_name %}
+                        <section class="intro-wrap cta-events attractions-listing">
+                            <div class="intro">
+                                <a href="/blog/{{post.url_friendly_name}}/" class="postlink" title="{{post.url_friendly_name}}"><div class="cta-events-img" style="background-image: url({{post.blogimage.url}})">
+                                </div></a>
+                                <div class="-right -right-blog">
+                                    <a href="/blog/{{post.url_friendly_name}}/" class="postlink" title="{{post.url_friendly_name}}">
+                                        <h2>{{post.title}}</h2>
+                                    </a>
+                                    <div class="date-holder">{{post.date | date: "%B %d, %Y"}}</div>
+                                    {{post.short_description}}
+                                    <div class="btn-holder"><a href="/blog/{{post.url_friendly_name}}/" class="btn-common button-blue" title="{{post.url_friendly_name}}">READ MORE</a></div>
+                                </div>
+                            </div>
+                        </section>
+                    {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="blog-right-block"> {% include blog-aside.html %} </div>
+            </div>
+        </div>
+    </div>
+</section>
