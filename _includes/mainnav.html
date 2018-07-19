@@ -8,14 +8,12 @@
         <img src="/assets/images/small-logo.png" alt="Wine Country Inn" />
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="header-logo logo-item">
+            <a href="/" title="Wine Country Inn">
+              <img src="/assets/images/main-logo.png" alt="Wine Country Inn" />
+            </a>
+          </div>
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item logo-item">
-                    <div class="header-logo">
-                        <a href="/" title="Wine Country Inn">
-                        <img src="/assets/images/main-logo.png" alt="Wine Country Inn" />
-                        </a>
-                    </div>
-                </li>
                 {% for item in menu %}
                 <li class="nav-item {% if page.url == item.url %} active {% endif %} {% if page.parent == item.url %} active {% endif %} {% if item.class %} {{item.class}} {% endif %} ">
                     <a class="nav-link" href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
