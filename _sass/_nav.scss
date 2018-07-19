@@ -169,6 +169,9 @@
     &.logo-item{
       display: inline-block;
       @include transition-time(0.4s);
+        @media screen and (max-width: 991px){
+          display: none;
+        }
       a {
         margin-left: 20px;
       }
