@@ -7,10 +7,19 @@
 		max-width: 1680px;
 		margin: auto;
 		padding: 0px;
-		background-color: $black-transparent;
 		position: relative;
-		top: 35px;
+		@include media-breakpoint-down(lg) {
+			background-color: $black-transparent;
+		}
 		@include transition-time(0.4s);
+		.navbar-brand {
+			margin-right: 0;
+			padding: 10px;
+			background-color: $white;
+			@include media-breakpoint-down(lg) {
+				display: none;
+			}
+		}
 		.small-logo{
 			display: inline-block;
 			text-align: center;
@@ -42,12 +51,12 @@
 				}
 			}
 		}
-		@media screen and (max-width: 1499px){
-			top: 20px;
-		}
-		@media screen and (max-width: 1199px){
-			top: 0px;
-		}
+		// @media screen and (max-width: 1499px){
+		// 	top: 20px;
+		// }
+		// @media screen and (max-width: 1199px){
+		// 	top: 0px;
+		// }
 		.navbar-nav{
 			// padding-left: 35px;
 			// @media screen and (max-width: 1650px){
@@ -57,23 +66,29 @@
 			// 	padding-left: 18px;
 			// }
 			.nav-item{
-				padding-bottom: 10px;
-				padding-right: 35px;
 				position: relative;
-				@media screen and (max-width: 1650px){
-					padding-right: 18px;
+				text-align: center;
+				padding: 7px;
+				@media (min-width: 1650px){
+					padding: 15px 7px;
 				}
-				@media screen and (max-width: 1499px){
-					padding-right: 18px;
-					padding-bottom: 0;
-				}
-				@media screen and (max-width: 1299px) and (min-width: 992px){
-					padding-right: 15px;
-					padding-left: 15px;
-				}
-				@media screen and (max-width: 991px){
-					text-align: center;
-				}
+				// padding-bottom: 10px;
+				// padding-right: 35px;
+				// position: relative;
+				// @media screen and (max-width: 1650px){
+				// 	padding-right: 18px;
+				// }
+				// @media screen and (max-width: 1499px){
+				// 	padding-right: 18px;
+				// 	padding-bottom: 0;
+				// }
+				// @media screen and (max-width: 1299px) and (min-width: 992px){
+				// 	padding-right: 15px;
+				// 	padding-left: 15px;
+				// }
+				// @media screen and (max-width: 991px){
+				// 	text-align: center;
+				// }
 				&.logo-item{
 					display: inline-block;
 					@include transition-time(0.4s);
@@ -144,9 +159,10 @@
 		.navbar-collapse {
 			position: relative;
 			z-index: 10;
-			@include media-breakpoint-down(md) {
-				background-color: rgba($black, .85);
-			}
+			background-color: $black-transparent;
+			// @include media-breakpoint-down(md) {
+			// 	background-color: rgba($black, .85);
+			// }
 		}
 		.navbar-toggler{
 			// background-color: $white;
@@ -197,8 +213,12 @@
 
 .scroll-header{
 	.navbar{
+		background-color: $black-transparent;
 		.check-availability-btn {
 			padding: 30px 10px 30px 10px;
+		}
+		.navbar-brand{
+			display: none;
 		}
 		.small-logo{
 			display: inline-block;
@@ -207,12 +227,16 @@
 		.navbar-nav{
 			margin-left:auto;
 			.nav-item{
-				padding-right: 18px;
+				// padding-right: 18px;
+				padding: 19px 7px;
 				&.logo-item{
 					display: none;
 				}
 				a {
 						padding: 16px 0 10px 0;
+						@media (min-width: 1600px) {
+							padding: 13px 0 10px 0;
+						}
 				}
 				@media screen and (min-width: 992px){
 					&.homenav{
@@ -222,6 +246,12 @@
 			}
 		}
 	}
+	.submenu{
+		top: 79px;
+	}
+	.offer-promo-tile {
+		top: 79px;
+	}
 }
 
 .submenu{
@@ -230,7 +260,6 @@
 	padding: 5px 15px 9px 14px;
     left: 0px;
     display: none;
-    top: 40px;
 		@media (min-width: 1500px) {
 			top: 64px;
 		}

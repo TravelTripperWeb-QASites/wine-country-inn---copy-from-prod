@@ -1,9 +1,11 @@
 {% assign menu = site.data.navigation.menu %}
 <section class="navbar-section">
-    <nav class="navbar navbar-toggleable-lg navbar-light bg-faded">
+    <nav class="navbar navbar-toggleable-lg navbar-light">
 
       <!--Offer Promo Tile & Popup-->
       {% include offer-promo-popup.html %}
+
+<a class="navbar-brand" href="/"><img src="/assets/images/main-logo.png" alt="Wine Country Inn" /></a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" title="navigation" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -12,14 +14,14 @@
         <img src="/assets/images/small-logo.png" alt="Wine Country Inn" />
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item logo-item">
+            <ul class="navbar-nav m-auto">
+                <!-- <li class="nav-item logo-item">
                     <div class="header-logo">
                         <a href="/" title="Wine Country Inn">
                         <img src="/assets/images/main-logo.png" alt="Wine Country Inn" />
                         </a>
                     </div>
-                </li>
+                </li> -->
                 {% for item in menu %}
                 <li class="nav-item {% if page.url == item.url %} active {% endif %} {% if page.parent == item.url %} active {% endif %} {% if item.class %} {{item.class}} {% endif %} ">
                     <a class="nav-link" href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
