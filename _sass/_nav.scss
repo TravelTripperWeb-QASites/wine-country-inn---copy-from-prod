@@ -144,6 +144,8 @@
 				    		padding: 15px 10px 15px 10px;
 				    	}
 
+				    }
+				}
 				&:hover{
 					&>.submenu{
 						display: block;
@@ -208,52 +210,8 @@
 		}
 	}
 }
-.header-logo{
-    text-align: center;
-    z-index: 9;
-    width: 240px;
-    margin: auto;
-    height: 0px;
-  position: relative;
-  top: -52px;
-  margin: 0;
-  @media screen and (max-width: 1499px){
-    width: 210px;
-    top: -37px;
-  }
-  @media screen and (max-width: 1299px) and (min-width: 992px){
-    width: 160px;
-  }
-  @media screen and (max-width: 991px){
-    display: none;
-  }
-    a{
-      background-color: $white;
-      display: inline-block;
-      padding: 15px 30px 30px 30px;
-      img{
-        width: 100%;
-      }
-      @media screen and (max-width: 1499px){
-        padding: 15px 10px 30px 10px;
-      }
 
-    }
-    &.logo-item{
-      display: inline-block;
-      @include transition-time(0.4s);
-        @media screen and (max-width: 991px){
-          display: none;
-        }
-      a {
-        margin-left: 20px;
-      }
-    }
-}
 .scroll-header{
-  .logo-item{
-    display: none;
-  }
 	.navbar{
 		background-color: $black-transparent;
 		.check-availability-btn {
