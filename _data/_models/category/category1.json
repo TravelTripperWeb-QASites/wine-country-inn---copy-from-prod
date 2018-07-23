@@ -1,6 +1,8 @@
-{ 
-  "title": "Dining","url_friendly_name":"dining", 
-  "categoryimage": {
-    "url": "/images/hero-main.jpg"
-  } 
+{
+  "title": "Wine",
+  "meta_title": "Wine | Blog | Wine Country inn",
+  "meta_description": "Nearly 400 wineries call Napa Valley home, from charming chateaus to grand castles and palatial estates. Taste your way through this revered wine region with these recommendations.",
+  "url_friendly_name": "wine",
+  "description": "Nearly 400 wineries call Napa Valley home, from charming chateaus to grand castles and palatial estates. Taste your way through this revered wine region with these recommendations.",
+  "order": "1"
 }
