@@ -128,6 +128,12 @@ h6 {
     font-size: 1.5625rem;
     color: $hover-green;
     line-height: 1.875rem;
+    a {
+      color: $dark-grey;
+      &:hover {
+        color: $primary-color;
+      }
+    }
 }
 
 .container{
@@ -150,6 +156,12 @@ p {
     @include media-breakpoint-up(xl) {
         font-size: 0.9375rem;
         line-height: 1.875rem;
+    }
+    a {
+      color: $primary-color;
+      &:hover {
+        color: $secondary_color;
+      }
     }
 }
 
