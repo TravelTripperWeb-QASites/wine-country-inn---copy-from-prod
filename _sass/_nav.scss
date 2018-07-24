@@ -6,10 +6,13 @@
 	.navbar{
 		max-width: 1680px;
 		margin: auto;
-		padding: 0px;
+		padding: 0px 15px;
 		position: relative;
 		@include media-breakpoint-down(lg) {
 			background-color: $black-transparent;
+		}
+		@media (min-width: 1500px) {
+			padding: 0;
 		}
 		@include transition-time(0.4s);
 		.navbar-brand {
@@ -69,7 +72,7 @@
 				position: relative;
 				text-align: center;
 				padding: 7px;
-				@media (min-width: 1650px){
+				@media (min-width: 1500px){
 					padding: 15px 7px;
 				}
 				// padding-bottom: 10px;
@@ -213,6 +216,7 @@
 
 .scroll-header{
 	.navbar{
+		padding: 0px;
 		background-color: $black-transparent;
 		.check-availability-btn {
 			padding: 30px 10px 30px 10px;
