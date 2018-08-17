@@ -23,7 +23,7 @@ permalink: /attractions/
                 <div class="text-col">
                 	{% regionblock attractions_text_1, type:text %}
                     <p class="semi-ital left-line">
-                        Whether it’s a new blend to try or an exhilarating hike through the valley’s picturesque hills, guests have much to explore throughout the Napa Valley. 
+                        Whether it’s a new blend to try or an exhilarating hike through the valley’s picturesque hills, guests have much to explore throughout the Napa Valley.
                     </p>
                     {% endregionblock %}
                     <!-- <a href="#" class="theme-btn" title="Vacation Guide"> Vacation Guide <i class="fa fa-angle-right"></i></a> -->
@@ -53,7 +53,7 @@ permalink: /attractions/
                     {% endregionblock %}
                     {% regionblock attractions_text_3, type:text %}
                     <p class="left-line pb-0">
-                        Much of the Napa Valley’s best attractions are within minutes of the Wine Country Inn, thanks to its central location near the charming town of St. Helena. 
+                        Much of the Napa Valley’s best attractions are within minutes of the Wine Country Inn & Cottages , thanks to its central location near the charming town of St. Helena.
                     </p>
                     <br>
                     <ul>
@@ -77,8 +77,8 @@ permalink: /attractions/
         <div class="left-gap">
         	{% regionblock attractions_header_4, type:header %}
             <h2>
-                Breathtaking views<br> 
-                of the <span class="italic">Napa Valley</span><br> 
+                Breathtaking views<br>
+                of the <span class="italic">Napa Valley</span><br>
                 below
             </h2>
             {% endregionblock %}
@@ -126,13 +126,13 @@ permalink: /attractions/
                 <div class="left-gap">
                 	{% regionblock attractions_header_6, type:header %}
                     <h2>
-                        Day Trips from the<br> 
-                        <span class="italic">Napa Valley</span> 
+                        Day Trips from the<br>
+                        <span class="italic">Napa Valley</span>
                     </h2>
                     {% endregionblock %}
                     {% regionblock attractions_text_5, type:text %}
                     <p class="left-line pb-0">
-                        There’s also much to see outside the Napa Valley, including many of the country’s most impressive national parks, as well as California’s most intriguing cities, making a day trip from the Wine Country Inn well worth the drive.
+                        There’s also much to see outside the Napa Valley, including many of the country’s most impressive national parks, as well as California’s most intriguing cities, making a day trip from the Wine Country Inn & Cottages well worth the drive.
                     </p>
                     <br>
                     <ul>
@@ -152,16 +152,16 @@ permalink: /attractions/
 <section class="home-events-more">
     <div class="home-events">
         <div class="items-heading-row">
-            <a href="/events/" class="view-all-items">view all events <i class="fa fa-angle-right" aria-hidden="true"></i></a>	
+            <a href="/events/" class="view-all-items">view all events <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             <div class="items-heading-text">
             	{% regionblock attractions_header_7, type:header %}
                 <h2 class="">Napa Valley <i class="italic">events</i> <span class="right-line"></span></h2>
                 {% endregionblock %}
             </div>
         </div>
-        {% assign eventlist = site.data._models.events | sort:'date' %} 
+        {% assign eventlist = site.data._models.events | sort:'date' %}
         <div class="owl-carousel owl-theme">
-            {% for events in eventlist limit:6 %}  
+            {% for events in eventlist limit:6 %}
             <div class="event-block">
                 <h5>{{ events.date | date: "%B" }}</h5>
                 <div class="_left">
