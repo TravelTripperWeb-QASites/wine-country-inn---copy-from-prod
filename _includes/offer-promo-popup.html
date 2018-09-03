@@ -1,13 +1,14 @@
 <!--Offer Promo Tile here-->
+{% assign offer = site.data.unlock-offer %}
 <section class="offer-promo-tile unlock">
-  <h3>Unlock Special Offer</h3><a href="javascript:void(0);" data-toggle="modal" data-target="#offer-promo-popup" title="Unlock Offer" class="theme-btn transparent-primary"><i class="fa fa-unlock-alt" aria-hidden="true"></i> UNLOCK <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+  <h3>{{ offer.offer-content }}</h3><a href="javascript:void(0);" data-toggle="modal" data-target="#offer-promo-popup" title="Unlock Offer" class="theme-btn transparent-primary"><i class="fa fa-unlock-alt" aria-hidden="true"></i> UNLOCK <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 </section>
 <div class="promo-code-reminder">
     <div class="reminder-text">
         <h4>Don't forget to redeem <span>#UNLOCK</span> for exclusive deals </h4>
         <i><sup>*</sup>Promo code valid only once.</i>
     </div>
-    <a href="https://res.windsurfercrs.com/ibe/details.aspx?propertyid=14513&rate=UNLOCK&nono=1&CheckIn=02/02/2018" title="Book Now" id="Unlock-Book-Now" class="theme-btn transparent-dark">Book Now</a>
+    <a href="{{ offer.offer-reminder-url }}" title="Book Now" id="Unlock-Book-Now" class="theme-btn transparent-dark">Book Now</a>
 </div>
 
 <!--Offer Promo popup here-->
@@ -31,7 +32,7 @@
                 <div class="message">
                     <h5>We appreciate your subscription. You are all set to access Insider Deals!</h5>
                     <h3 class="offer-title">Click below or use Offer-code <span>#Unlock</span></h3>
-                    <a href="https://res.windsurfercrs.com/ibe/details.aspx?propertyid=14513&rate=UNLOCK&nono=1" title="Book Now" class="theme-btn transparent-primary">Book Now</a>
+                    <a href="{{ offer.offer-message-url }}" title="Book Now" class="theme-btn transparent-primary">Book Now</a>
                 </div>
             </div>
         </div>
