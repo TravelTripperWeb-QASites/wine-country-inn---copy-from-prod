@@ -4,11 +4,14 @@
     right: 0;
     left: 0;
     text-align: center;
-    padding: 12px 0;
+    padding: 8px 0;
     background-color: $primary-color;
     color:#fff;
     max-width: 100%;
     z-index: 1;
+    @include media-breakpoint-up(md) {
+      padding: 12px 0;
+    }
     @media (min-width: 1200px) {
       top: 115px;
     }
@@ -17,9 +20,10 @@
     }
     h3,a {
         display: inline-block;
-        margin: 0px 15px;
+
     }
     h3 {
+      margin: 0px 15px 8px 15px;
         font-family: $headings_font;
         font-size: 18px;
         color: #ffffff;
@@ -28,10 +32,12 @@
         }
     }
     a {
+      margin: 0px 15px;
         i {padding-right:5px;}
     }
     .theme-btn {
-      @include media-breakpoint-down(sm) {
+      padding: 8px 20px;
+      @include media-breakpoint-up(md) {
         padding: 15px 20px;
       }
     }

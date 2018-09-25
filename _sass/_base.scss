@@ -184,16 +184,19 @@ p {
     &.offers-banner{
         min-height:360px;
     }
-    h1{
+    h1 {
         @include translate-text(0%, -50%);
         position:absolute;
-        top:55%;
+        top:65%;
         width: 100%;
         text-align: center;
         line-height: 6rem;
         color: $white;
         text-transform:uppercase;
          z-index: 3;
+         @include media-breakpoint-up(md) {
+           top:55%;
+         }
     }
     .hero-banner-content {
       max-width: 700px;
@@ -202,15 +205,19 @@ p {
       color: $white;
       position: absolute;
       z-index: 10;
-      top: 50%;
+      top: 70%;
       right: 0;
       left: 0;
       transform: translateY(-50%);
       text-align: center;
       left: 0;
       right: 0;
+      @include media-breakpoint-up(md) {
+        top: 58%;
+      }
         h1 {
           position: relative;
+          line-height: normal;
           @include media-breakpoint-up(md) {
             margin-bottom: 30px;
           }
